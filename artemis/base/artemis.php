@@ -39,9 +39,6 @@ $arrayComponents = array(
     'site' => $strComponentsPath . 'site/site.php',
     'aus' => $strComponentsPath . 'aus/aus.php',
     'download' => $strComponentsPath . 'download/download.php',
-    'integration' => $strComponentsPath . 'integration/integration.php',
-    'discover' => $strComponentsPath . 'discover/discover.php',
-    'license' => $strComponentsPath . 'license/license.php',
     '43893' => $strComponentsPath . 'special/special.php'
 );
 
