@@ -4,8 +4,8 @@
 <br>
 This browser, even though fairly close to Gecko-based browsers like Mozilla Firefox in how it works, is based on a different layout engine and offers a different set of features. It aims to provide close adherence to official web standards and specifications in its implementation (with minimal compromise), and purposefully excludes a number of features to strike a good balance between general use, performance, and technical advancements on the Web.<br>
 <br>
-For additional information, check out the main site at <a href="//www.palemoon.org" target="_blank">//www.palemoon.org.</a><br>
-For support, check out the forum at <a href="https://forum.palemoon.org" target="_blank">https://forum.palemoon.org</a>.</p>
+For additional information, check out the main site <a href="//www.palemoon.org" target="_blank">here</a>.<br>
+For support, check out the forum <a href="https://forum.palemoon.org" target="_blank">here</a>.</p>
 
 <h3>Installation:</h3>
 
