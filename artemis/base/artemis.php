@@ -5,7 +5,7 @@
 
 // == | Vars | ================================================================
 
-$strPhoebusLiveURL = 'addons.palemoon.org';
+$strPhoebusLiveURL = 'linux.palemoon.org';
 $strPhoebusDevURL = $strPhoebusLiveURL;
 $strPhoebusURL = $strPhoebusLiveURL;
 $strPhoebusSiteName = 'Pale Moon - Linux';
