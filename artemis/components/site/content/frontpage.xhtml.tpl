@@ -1,21 +1,48 @@
-<h1>Pale Moon Add-ons Site</h1>
+<h1>Pale Moon for Linux</h1>
 
-<h3>What are Add-ons?</h3>
-<p>Add-ons let you customize Pale Moon with extra functionality or a different look.</p>
-<p>There are <em>several</em> types of add-ons. <em>Extensions</em> expand the capabilities of the browser, <em>themes</em> allow you to personalize Pale Moon's visual aesthetic, and <em>plugins</em> further extend the browser with specialized external components such as the <a href="http://get.adobe.com/flashplayer/" target="_blank">Adobe Flash Player</a>.</p>
+<p>Pale Moon is an Open Source Goanna-based web browser completely built from its own, independently developed source that was forked off from Firefox/Mozilla code a number of years ago, and focuses on efficiency and ease of use by carefully selecting features and optimizations to improve the browser's stability and user experience, while offering full customization and a growing collection of <a href="//addons.palemoon.org/" target="_blank">extensions</a> and <a href="//addons.palemoon.org/themes/" target="_blank">themes</a> to make the browser truly your own.<br>
+<br>
+This browser, even though fairly close to Gecko-based browsers like Mozilla Firefox in how it works, is based on a different layout engine and offers a different set of features. It aims to provide close adherence to official web standards and specifications in its implementation (with minimal compromise), and purposefully excludes a number of features to strike a good balance between general use, performance, and technical advancements on the Web.<br>
+<br>
+For additional information, check out the main site at <a href="//www.palemoon.org" target="_blank">//www.palemoon.org.</a><br>
+For support, check out the forum at <a href="https://forum.palemoon.org" target="_blank">https://forum.palemoon.org</a>.</p>
 
-<h3>Search (Engine) Plugins</h3>
-<p>Looking for that Google Search plugin? Perhaps you want to easily search Youtube or just want to ask why Ask.com got rid of Jeeves from your browser's search box. Head over <a href="/search-plugins/">here</a> to grab your favorite search plugin. More are on the way so check back frequently!</p>
+<h3>Installation:</h3>
 
-<h3>Language Packs, Tab Groups, and Pale Moon Commander</h3>
-<p>Because the add-ons site is a new community effort, a few items will not be added to it at this time. These include the Language Packs and the two Pale Moon add-ons created and maintained by Moonchild himself.</p>
-<p>You can find all the language packs for Pale Moon <a href="http://www.palemoon.org/langpacks.shtml">here</a>. Additionally, the Tab Groups add-on is <a href="http://www.palemoon.org/tabgroups.shtml">here</a> and Pale Moon Commander is <a href="http://www.palemoon.org/commander.shtml">here</a>.</p>
+<p>Installation, uninstallation and upgrades are normally managed with the <a href="/web/20170319043824/http://linux.palemoon.org/download/installer/">Pale Moon for Linux installer</a>. However, you can also download Pale Moon for Linux as a <a href="/web/20170319043824/http://linux.palemoon.org/download/mainline/">bzipped tarball</a> that can be extracted and run from any location on your system.</p>
 
-<h3>Some of your add-ons not working since you updated to Pale Moon 27?</h3>
-<p>Please check out <a href="/incompatible/">Known Incompatible Add-ons</a>.
+<p>You can also install one of these fully-endorsed third-party builds of Pale Moon for Linux:</p>
 
-<h3>Not finding what you are looking for?</h3>
-<p>We are working hard to populate the Pale Moon Add-ons Site but some add-ons may not yet be on the site or are not listed because they still work. If you cannot find something, please make sure to try the <a href="https://addons.mozilla.org/firefox/" target="_blank">Mozilla Add-ons Site</a>.</p>
+<ul>
+        <li><a href="https://forum.palemoon.org/viewtopic.php?f=40&t=13530">Pale Moon for Linux - SSE-only build</a> -- Maintained by Walter Dnes</li>
+        <li><a href="https://software.opensuse.org/download.html?project=home=stevenpusser&package=palemoon">Pale Moon repositories for Debian and Ubuntu</a> -- maintained by Steve Pusser</li>
+        <li><a href="http://www.kovacsoltvideo.hu/moonchildproductions">Pale Moon and FossaMail repacks for Ubuntu and Debian</a> -- maintained by László Kovács</li>
+</ul>
 
-<h3>Want your add-on listed here?</h3>
-<p>If you are a developer and wish to have your add-on listed on the Pale Moon Add-ons Site, please see <a href="http://developer.palemoon.org/Add-ons:Site">here</a>.</p>
+<p>Additionally, Pale Moon is included in and can be installed directly from the default repositories of the following distros:</p>
+
+<ul>
+        <li>Manjaro</li>
+        <li>PCLinuxOS</li>
+        <li>Puppy Linux</li>
+        <li>MEPIS/MX-15</li>
+        <li>Arch User Repository (AUR)</li>
+        <li>Gentoo Overlays</li>
+        <li>Slackbuilds</li>
+</ul>
+
+<h3>Linux system requirements</h3>
+
+<p>The mainline build of Pale Moon requires a processor which supports the SSE2 instruction set, and will not run on processors that do not support it.</p>
+<p>To check if your processor supports SSE2, type the following into the terminal: <code>grep -om1 sse2 /proc/cpuinfo</code></p>
+<p>If <em>sse2</em> is displayed, then your processor is supported. If there is no output, your processor does not support SSE2 and you will need the SSE-only contributed build listed above. 
+
+</p><p>Pale Moon will not run at all without (reasonably updated versions of) the following dependencies:</p>
+
+<ul>
+	<li>GTK+ v2.24</li>
+	<li>GLibc v2.17</li>
+	<li>Pango</li>
+	<li>X.Org</li>
+	<li>libstdc++ 4.3</li>
+</ul>
