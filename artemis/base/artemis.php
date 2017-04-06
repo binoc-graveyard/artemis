@@ -6,10 +6,10 @@
 // == | Vars | ================================================================
 
 $strPhoebusLiveURL = 'addons.palemoon.org';
-$strPhoebusDevURL = 'dev.addons.palemoon.org';
+$strPhoebusDevURL = $strPhoebusLiveURL;
 $strPhoebusURL = $strPhoebusLiveURL;
-$strPhoebusSiteName = 'Pale Moon - Add-ons';
-$strPhoebusVersion = '1.5.0';
+$strPhoebusSiteName = 'Pale Moon - Linux';
+$strPhoebusVersion = '1.5.0a1';
 $strPhoebusDatastore = './datastore/';
 $boolDebugMode = false;
 
@@ -30,7 +30,7 @@ $strRequestComponent = funcHTTPGetValue('component');
 $arrayArgsComponent = preg_grep('/^component=(.*)/', explode('&', parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY)));
 $strRequestPath = funcHTTPGetValue('path');
 
-$strApplicationPath = $_SERVER['DOCUMENT_ROOT'] . '/phoebus/';
+$strApplicationPath = $_SERVER['DOCUMENT_ROOT'] . '/artemis/';
 $strComponentsPath = $strApplicationPath . 'components/';
 $strModulesPath = $strApplicationPath . 'modules/';
 $strGlobalLibPath = $_SERVER['DOCUMENT_ROOT'] . '/lib/';
@@ -108,7 +108,7 @@ function funcSendHeader($_value) {
         'text' => 'Content-Type: text/plain',
         'xml' => 'Content-Type: text/xml',
         'css' => 'Content-Type: text/css',
-        'phoebus' => 'X-Phoebus: https://github.com/Pale-Moon-Addons-Team/phoebus/',
+        'phoebus' => 'X-Artemis: https://github.com/Pale-Moon-Addons-Team/phoebus/',
     );
     
     if (array_key_exists($_value, $_arrayHeaders)) {
@@ -163,12 +163,12 @@ if ($_SERVER['SERVER_NAME'] == $strPhoebusDevURL) {
         $_strGitHead = file_get_contents('./.git/HEAD');
         $_strGitSHA1 = file_get_contents('./.git/' . substr($_strGitHead, 5, -1));
         $_strGitBranch = substr($_strGitHead, 16, -1);
-        $strPhoebusSiteName = 'Phoebus Development - Version: ' . $strPhoebusVersion . ' - ' .
+        $strPhoebusSiteName = 'Artemis Development - Version: ' . $strPhoebusVersion . ' - ' .
             'Branch: ' . $_strGitBranch . ' - ' .
             'Commit: ' . $_strGitSHA1;
     }
     else {
-        $strPhoebusSiteName = 'Phoebus Development - Version: ' . $strPhoebusVersion;
+        $strPhoebusSiteName = 'Artemis Development - Version: ' . $strPhoebusVersion;
     }
     error_reporting(E_ALL);
     ini_set("display_errors", "on");
