@@ -8,6 +8,8 @@
         <style type="text/css">
             {%SITE_STYLESHEET}
         </style>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body>
         <div id="PM-Wrapper">
