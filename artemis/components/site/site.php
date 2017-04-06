@@ -26,7 +26,7 @@ $arrayStaticPages = array(
         'contentTemplate' => $strContentBasePath . 'help/faq.xhtml.tpl',
     ),
     '/help/installation/' => array(
-        'Installation and Uninstallation' => 'Frequently Asked Questions',
+        'title' => 'Installation and Uninstallation',
         'contentTemplate' => $strContentBasePath . 'help/installation.xhtml.tpl',
     ),
 );
