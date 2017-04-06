@@ -21,6 +21,10 @@ $arrayStaticPages = array(
         'title' => 'Your browser, your way!',
         'contentTemplate' => $strContentBasePath . 'frontpage.xhtml.tpl',
     ),
+    '/installer-release-notes/' => array(
+        'title' => 'Installer Release Notes',
+        'contentTemplate' => $strContentBasePath . 'installer-release-notes.xhtml.tpl',
+    ),
     '/help/faq/' => array(
         'title' => 'Frequently Asked Questions',
         'contentTemplate' => $strContentBasePath . 'help/faq.xhtml.tpl',
