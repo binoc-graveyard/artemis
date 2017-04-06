@@ -23,21 +23,10 @@
                         <ul class="ul_ch">
                             <li class="li_nc"><a href="http://www.palemoon.org/" target="_self">Pale Moon homepage</a></li>
                             <li class="li_nc"><a href="http://start.palemoon.org/" target="_self">Pale Moon Start page</a></li>
-                            <li class="li_nc"><a href="/" target="_self">Pale Moon add-ons site</a></li>
+                            <li class="li_nc"><a href="/" target="_self">Pale Moon for Linux site</a></li>
                         </ul>
                     </li>
-                    <li class="li_nc"><a href="/extensions/">Extensions</a></li>
-                    <li class="li_nc"><a href="/themes/">Themes</a></li>
-                    <li class="li_nc"><a href="/language-packs/">Language Packs</a></li>
-                    <li class="li_nc"><a href="/search-plugins/">Search Plugins</a></li>
-                    <li class="li_nc"><a href="#">More&hellip;</a>
-                        <ul class="ul_ch">
-                            <li class="li_nc"><a href="/incompatible/">Incompatible Extensions</a></li>
-                            <li class="li_nc"><a href="http://developer.palemoon.org/" target="_blank">Add-on Development</a></li>
-                            <li class="li_nc"><a href="https://addons.mozilla.org/firefox/" target="_blank">Mozilla's Add-ons Site</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                 </ul>
             </span>
             <span class="alignright" style="margin-top: 2px; margin-right: 15px;">
             </span>
