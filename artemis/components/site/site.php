@@ -21,13 +21,13 @@ $arrayStaticPages = array(
         'title' => 'Your browser, your way!',
         'contentTemplate' => $strContentBasePath . 'frontpage.xhtml.tpl',
     ),
-    '/search/' => array(
-        'title' => 'Search',
-        'contentTemplate' => $strContentBasePath . 'search.xhtml.tpl',
+    '/help/faq/' => array(
+        'title' => 'Frequently Asked Questions',
+        'contentTemplate' => $strContentBasePath . 'help/faq.xhtml.tpl',
     ),
-    '/incompatible/' => array(
-        'title' => 'Known Incompatible Add-ons',
-        'contentTemplate' => $strContentBasePath . 'incompatible.xhtml.tpl',
+    '/help/installation/' => array(
+        'Installation and Uninstallation' => 'Frequently Asked Questions',
+        'contentTemplate' => $strContentBasePath . 'help/installation.xhtml.tpl',
     ),
 );
 
