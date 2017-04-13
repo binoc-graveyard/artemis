@@ -72,11 +72,11 @@ function funcGeneratePage($_array) {
         ->setTemplateDir($GLOBALS['arraySmartyPaths']['templates']);
 
     // Assign data to Smarty
-    $libSmarty->assign('SITE_NAME', $GLOBALS['strPhoebusSiteName']);
-    $libSmarty->assign('SITE_DOMAIN', '//' . $GLOBALS['strPhoebusURL']);
+    $libSmarty->assign('SITE_NAME', $GLOBALS['strArtemisSiteName']);
+    $libSmarty->assign('SITE_DOMAIN', '//' . $GLOBALS['strArtemisURL']);
     $libSmarty->assign('PAGE_TITLE', $_array['title']);
     $libSmarty->assign('BASE_PATH', substr($GLOBALS['strSkinBasePath'], 1));
-    $libSmarty->assign('PHOEBUS_VERSION', $GLOBALS['strPhoebusVersion']);
+    $libSmarty->assign('ARTEMIS_VERSION', $GLOBALS['strArtemisVersion']);
     
     if (array_key_exists('contentData', $_array)) {
         $libSmarty->assign('PAGE_DATA', $_array['contentData']);

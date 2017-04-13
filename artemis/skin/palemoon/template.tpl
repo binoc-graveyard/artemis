@@ -61,7 +61,7 @@
                     - <a href="//www.palemoon.org/privacy.shtml">Privacy</a>.
                 </span></p>
                 <p><span style="color: rgb(102, 102, 102);">
-                    The Pale Moon Add-ons Site is powered by <a href="#" target="_blank">Project Artemis</a> {$PHOEBUS_VERSION}.
+                    The Pale Moon for Linux Site is powered by <a href="#" target="_blank">Project Artemis</a> {$ARTEMIS_VERSION}.
                 </span></p>
             </div>
         </div>

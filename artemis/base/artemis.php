@@ -5,12 +5,12 @@
 
 // == | Vars | ================================================================
 
-$strPhoebusLiveURL = 'linux.palemoon.org';
-$strPhoebusDevURL = $strPhoebusLiveURL;
-$strPhoebusURL = $strPhoebusLiveURL;
-$strPhoebusSiteName = 'Pale Moon - Linux';
-$strPhoebusVersion = '1.5.0a1';
-$strPhoebusDatastore = './datastore/';
+$strArtemisLiveURL = 'linux.palemoon.org';
+$strArtemisDevURL = $strArtemisLiveURL;
+$strArtemisURL = $strArtemisLiveURL;
+$strArtemisSiteName = 'Pale Moon - Linux';
+$strArtemisVersion = '1.5.0a1';
+$strArtemisDatastore = './datastore/';
 $boolDebugMode = false;
 
 $strPaleMoonID = '{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}';
@@ -105,11 +105,11 @@ function funcSendHeader($_value) {
         'text' => 'Content-Type: text/plain',
         'xml' => 'Content-Type: text/xml',
         'css' => 'Content-Type: text/css',
-        'phoebus' => 'X-Artemis: https://github.com/Pale-Moon-Addons-Team/phoebus/',
+        'artemis' => 'X-Artemis: https://github.com/Pale-Moon-Addons-Team/artemis/',
     );
     
     if (array_key_exists($_value, $_arrayHeaders)) {
-        header($_arrayHeaders['phoebus']);
+        header($_arrayHeaders['artemis']);
         header($_arrayHeaders[$_value]);
         
         if ($_value == '404') {
@@ -153,19 +153,19 @@ function endsWith($haystack, $needle)
 
 // == | Main | ================================================================
 
-if ($_SERVER['SERVER_NAME'] == $strPhoebusDevURL) {
+if ($_SERVER['SERVER_NAME'] == $strArtemisDevURL) {
     $boolDebugMode = true;
-    $strPhoebusURL = $strPhoebusDevURL;
+    $strArtemisURL = $strArtemisDevURL;
     if (file_exists('./.git/HEAD')) {
         $_strGitHead = file_get_contents('./.git/HEAD');
         $_strGitSHA1 = file_get_contents('./.git/' . substr($_strGitHead, 5, -1));
         $_strGitBranch = substr($_strGitHead, 16, -1);
-        $strPhoebusSiteName = 'Artemis Development - Version: ' . $strPhoebusVersion . ' - ' .
+        $strArtemisSiteName = 'Artemis Development - Version: ' . $strArtemisVersion . ' - ' .
             'Branch: ' . $_strGitBranch . ' - ' .
             'Commit: ' . $_strGitSHA1;
     }
     else {
-        $strPhoebusSiteName = 'Artemis Development - Version: ' . $strPhoebusVersion;
+        $strArtemisSiteName = 'Artemis Development - Version: ' . $strArtemisVersion;
     }
     error_reporting(E_ALL);
     ini_set("display_errors", "on");
