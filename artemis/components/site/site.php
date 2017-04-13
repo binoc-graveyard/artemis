@@ -99,8 +99,7 @@ function funcGeneratePage($_array) {
 // == | Main | ================================================================
 
 if (startsWith($strRequestPath, '/download/')) {
-    funcSendHeader('text');
-    print('download page');
+    funcSendHeader('501');
 }
 else {
     if (array_key_exists($strRequestPath, $arrayStaticPages)) {

@@ -105,7 +105,7 @@ function funcSendHeader($_value) {
         'text' => 'Content-Type: text/plain',
         'xml' => 'Content-Type: text/xml',
         'css' => 'Content-Type: text/css',
-        'artemis' => 'X-Artemis: https://github.com/Pale-Moon-Addons-Team/artemis/',
+        'artemis' => 'X-Artemis: https://github.com/trav90/artemis/',
     );
     
     if (array_key_exists($_value, $_arrayHeaders)) {
