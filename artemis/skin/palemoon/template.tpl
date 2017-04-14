@@ -3,6 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
         <title>{$SITE_NAME} - {$PAGE_TITLE}</title>
         <link rel="icon" href="/favicon.ico" />
         <style type="text/css">
