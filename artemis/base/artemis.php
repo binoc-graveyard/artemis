@@ -13,19 +13,6 @@ $strArtemisVersion = '1.5.0b1';
 $strArtemisDatastore = './datastore/';
 $boolDebugMode = false;
 
-$strPaleMoonID = '{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}';
-$strFossaMailID = '{3550f703-e582-4d05-9a08-453d09bdfdc6}';
-$strFirefoxID = '{ec8030f7-c20a-464f-9b0e-13a3a9e97384}';
-$strThunderbirdID = $strFossaMailID; // {3550f703-e582-4d05-9a08-453d09bdfdc6}
-$strSeaMonkeyID = '{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}';
-$strApplicationID = $strPaleMoonID;
-
-$strMinimumApplicationVersion = '27.0.0';
-$strFirefoxVersion = '27.9';
-$strFirefoxOldVersion = '24.9';
-
-$strLangPackBaseURL = 'http://relmirror.palemoon.org/langpacks/27.x/';
-
 $strRequestComponent = funcHTTPGetValue('component');
 $arrayArgsComponent = preg_grep('/^component=(.*)/', explode('&', parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY)));
 $strRequestPath = funcHTTPGetValue('path');
@@ -37,8 +24,7 @@ $strGlobalLibPath = $_SERVER['DOCUMENT_ROOT'] . '/lib/';
 
 $arrayComponents = array(
     'site' => $strComponentsPath . 'site/site.php',
-    'aus' => $strComponentsPath . 'aus/aus.php',
-    'download' => $strComponentsPath . 'download/download.php',
+    'pminstaller' => $strComponentsPath . 'pminstaller/pminstaller.php',
     '43893' => $strComponentsPath . 'special/special.php'
 );
 
@@ -93,6 +79,7 @@ function funcCheckVar($_value) {
 
 function funcSendHeader($_value) {
     $_arrayHeaders = array(
+        '400' => 'HTTP/1.1 400 Bad Request',
         '404' => 'HTTP/1.0 404 Not Found',
         '501' => 'HTTP/1.0 501 Not Implemented',
         'html' => 'Content-Type: text/html',
