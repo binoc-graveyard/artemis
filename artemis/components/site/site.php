@@ -37,7 +37,22 @@ $arrayStaticPages = array(
 
 // ============================================================================
 
-// == | funcGenerateStaticPage | ==============================================
+// == | funcGenDownloadContent | ==============================================
+
+function funcGenDownloadContent($_strSlug) {
+    $_arrayMetadata = funcReadManifest($_strSlug);
+    
+    $arrayPage = array(
+        'title' => 'Download',
+        'contentTemplate' => $GLOBALS['strSkinBasePath'] . 'download.tpl',
+        'contentData' => $_arrayMetadata
+    );
+    
+    return $arrayPage;
+}
+// ============================================================================
+
+// == | funcGeneratePage | ==============================================
 
 function funcGeneratePage($_array) {
     // Get the required template files
@@ -64,7 +79,7 @@ function funcGeneratePage($_array) {
     
     // Configure Smarty
     $libSmarty->caching = 0;
-    $libSmarty->debugging = false;
+    $libSmarty->debugging = $GLOBALS['boolDebugMode'];
     $libSmarty->setCacheDir($GLOBALS['arraySmartyPaths']['cache'])
         ->setCompileDir($GLOBALS['arraySmartyPaths']['compile'])
         ->setConfigDir($GLOBALS['arraySmartyPaths']['config'])
@@ -98,8 +113,8 @@ function funcGeneratePage($_array) {
 
 // == | Main | ================================================================
 
-if (startsWith($strRequestPath, '/download/')) {
-    funcSendHeader('501');
+if ($strRequestPath == '/download/') {
+    funcGeneratePage(funcGenDownloadContent('download'));
 }
 else {
     if (array_key_exists($strRequestPath, $arrayStaticPages)) {
