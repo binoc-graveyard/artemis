@@ -13,7 +13,7 @@
         <li>The installer may not run on some &quot;lightweight&quot; distributions since the standard command line tools use busybox (which does not implement all features of the command line tools).</li>
         <li>If the installer does not run because the built-in copy of yad complains about being unable to load a particular library, then you likely do not have the basic dependencies required for any recent Mozilla based product. Please update the related libraries and try again.</li>
         <li>If you have any specialized requirements that the installer does not serve out of the box, then please use the <a href="/help/installation/">manual instructions</a> to install Pale Moon.</li>
-        <li>For further information, please check the pminstaller <a href="/information/installer-release-notes/">release notes</a> or visit the <a href="https://forum.palemoon.org/viewforum.php?f=37" target="_blank">forum</a>.</li>
+        <li>For further information, please check the pminstaller <a href="/installer-release-notes/">release notes</a> or visit the <a href="https://forum.palemoon.org/viewforum.php?f=37" target="_blank">forum</a>.</li>
     </ul>
 
     <h3>Download links:</h3>
@@ -24,6 +24,7 @@
 {if $PAGE_DATA.linux_installer.sig == true}
     PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux_installer.file}.sig">[Sig]</a></p>
 {/if}
+    </p>
 {elseif $PAGE_TYPE == 'mainline'}
     <h1>Download Pale Moon for Linux release binaries</h1>
     {if $PAGE_DATA.linux64_release.version == $PAGE_DATA.linux32_release.version}
@@ -36,24 +37,62 @@
     <p><a href="/datastore/release/{$PAGE_DATA.linux64_release.file}">Download x64 <strong>tar.bz2</strong> (direct download)</a><br />
     Size: {$PAGE_DATA.linux64_release.displaySize}<br />
     SHA-256 checksum: {$PAGE_DATA.linux64_release.hash}<br />
+{if $PAGE_DATA.linux64_release.sig == true}
     PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux64_release.file}.sig">[Sig]</a></p>
+{/if}
+    </p>
 
     <p><a href="/datastore/release/{$PAGE_DATA.linux32_release.file}">Download x86 <strong>tar.bz2</strong> (direct download)</a><br />
     Size: {$PAGE_DATA.linux32_release.displaySize}<br />
     SHA-256 checksum: {$PAGE_DATA.linux32_release.hash}<br />
-    PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux32_release.file}.sig">[Sig]</a></p>
-
+{if $PAGE_DATA.linux32_release.sig == true}
+    PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux32_release.file}.sig">[Sig]</a>
+{/if}
+    </p>
+    
     <p>For more information, please read the <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">release notes</a>.</p>
 {else}
     <h3>Mainstream Binaries are currently unavailable. Please try again later.</h3>
     <p><small>Error: i686/x86-64 version mismatch</small>
 {/if}
 {elseif $PAGE_TYPE == 'unstable'}
-<h1>Download Pale Moon for Linux unstable binaries</h1>
-<p>
-    {$PAGE_DATA.linux64_unstable.file} <br />
-    {$PAGE_DATA.linux64_unstable.version} <br />
-    {$PAGE_DATA.linux64_unstable.displaySize} <br />
-    {$PAGE_DATA.linux64_unstable.hash} <br />
-</p>
+    <h1>Download Pale Moon for Linux unstable binaries</h1>
+    <p>Please read the concise <a href="//www.palemoon.org/unstable/releasenotes.shtml" target="_blank">release notes</a> about this development version.</p>
+
+    <h3>Reporting bugs</h3>
+
+    <p>Please report any bugs you find in the <a href="https://github.com/MoonchildProductions/Pale-Moon/issues" target="_blank">issue tracker</a> on GitHub for Pale Moon. When you do so, please <span style="font-weight: bold; color: rgb(204, 0, 0);">check if the bug has already been reported</span> before by others to prevent duplicate entries in the tracker. If you report bugs, make sure to include the build date (as found in the about box) and provide clear information about the bug:</p>
+
+    <ul>
+        <li>Clear description of the bug, with a concise and clear title for the issue<br>
+           (include exact circumstances and exact error messages, if any)<br>
+        </li>
+        <li>Steps to reproduce<br>
+           (what exactly do you do to cause the bug to become apparent?)<br>
+        </li>
+        <li>Expected results<br>
+           (given the steps taken, what did you expect the browser to do?)<br>
+        </li>
+        <li>Actual results<br>
+           (what did the browser do instead of what was expected?)<br>
+        </li>
+    </ul>
+
+    <p>Also before you report a bug, make sure that you verify if the bug also manifests in a new profile <strong>with default preferences</strong> and <strong>no installed add-ons</strong>.</p>
+
+    <h2>Updating</h2>
+
+    <p>Note that these versions <span style="font-weight: bold; color: rgb(204, 0, 0);">will not update to later builds automatically!</span> You will have to download and update them manually. New unstable builds will be <a href="https://forum.palemoon.org/viewtopic.php?f=37&amp;p=103490#p103490" target="_blank">announced on the forum</a> as they become available.</p>
+
+    <h2>Download</h2>
+
+    <p>These versions are only available for Linux 64-bit. The tarball has not been signed in order to reduce the amount of Release Engineering overhead required to provide these builds.</p>
+
+    <p><a href="/datastore/release/{$PAGE_DATA.linux64_unstable.file}">Download x64 <strong>tar.bz2</strong> (direct download)</a><br />
+    Size: {$PAGE_DATA.linux64_unstable.displaySize}<br />
+    SHA-256 checksum: {$PAGE_DATA.linux64_unstable.hash}<br />
+{if $PAGE_DATA.linux64_unstable.sig == true}
+    PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux64_unstable.file}.sig">[Sig]</a>
+{/if}
+    </p>
 {/if}
