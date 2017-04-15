@@ -1,1 +1,1 @@
-<h3>{$TITLE}</h3>
+<h3>{$PAGE_TITLE}</h3>
