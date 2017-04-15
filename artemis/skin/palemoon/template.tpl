@@ -34,7 +34,7 @@
                         <ul class="ul_ch">
                             <li class="li_nc"><a href="//www.palemoon.org/releasenotes.shtml" target="_blank">Pale Moon Release notes</a>
                             </li>
-                            <li class="li_nc"><a href="/installer-release-notes/" >pminstaller Release notes</a>
+                            <li class="li_nc"><a href="/installer-release-notes/" >Installer Release notes</a>
                             </li>
                             <li class="li_nc"><a href="//www.palemoon.org/donations.shtml" target="_blank">Donations and Support</a>
                             </li>

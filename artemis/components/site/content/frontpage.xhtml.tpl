@@ -9,14 +9,14 @@ For support, check out the forum <a href="https://forum.palemoon.org" target="_b
 
 <h3>Installation:</h3>
 
-<p>Installation, uninstallation and upgrades are normally managed with the <a href="/web/20170319043824/http://linux.palemoon.org/download/installer/">Pale Moon for Linux installer</a>. However, you can also download Pale Moon for Linux as a <a href="/web/20170319043824/http://linux.palemoon.org/download/mainline/">bzipped tarball</a> that can be extracted and run from any location on your system.</p>
+<p>Installation, uninstallation and upgrades are normally managed with the <a href="/download/installer/">Pale Moon for Linux installer</a>. However, you can also download Pale Moon for Linux as a <a href="/download/mainline/">bzipped tarball</a> that can be extracted and run from any location on your system.</p>
 
 <p>You can also install one of these fully-endorsed third-party builds of Pale Moon for Linux:</p>
 
 <ul>
-        <li><a href="https://forum.palemoon.org/viewtopic.php?f=40&t=13530">Pale Moon for Linux - SSE-only build</a> -- Maintained by Walter Dnes</li>
-        <li><a href="https://software.opensuse.org/download.html?project=home=stevenpusser&package=palemoon">Pale Moon repositories for Debian and Ubuntu</a> -- maintained by Steve Pusser</li>
-        <li><a href="http://www.kovacsoltvideo.hu/moonchildproductions">Pale Moon and FossaMail repacks for Ubuntu and Debian</a> -- maintained by László Kovács</li>
+        <li><a href="https://software.opensuse.org/download.html?project=home=stevenpusser&package=palemoon" target="_blank">Pale Moon repositories for Debian and Ubuntu</a> -- maintained by Steve Pusser</li>
+        <li><a href="http://www.kovacsoltvideo.hu/moonchildproductions" target="_blank">Pale Moon and FossaMail repacks for Ubuntu and Debian</a> -- maintained by László Kovács</li>
+        <li><a href="https://forum.palemoon.org/viewtopic.php?f=40&t=13530" target="_blank">Pale Moon for Linux - SSE-only build</a> -- Maintained by Walter Dnes</li>
 </ul>
 
 <p>Additionally, Pale Moon is included in and can be installed directly from the default repositories of the following distros:</p>

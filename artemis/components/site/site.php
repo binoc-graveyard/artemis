@@ -42,8 +42,21 @@ $arrayStaticPages = array(
 function funcGenDownloadContent($_strType) {
     $_arrayMetadata = funcReadManifest('release');
     
+    if ($_strType == 'installer') {
+        $_strTitle = 'Download - Installer';
+    }
+    elseif ($_strType == 'mainline') {
+        $_strTitle = 'Download - Binaries';
+    }
+    elseif ($_strType == 'unstable') {
+        $_strTitle = 'Download - Unstable';
+    }
+    else {
+        $_strTitle = 'Download';
+    }
+    
     $arrayPage = array(
-        'title' => 'Download',
+        'title' => $_strTitle,
         'contentTemplate' => $GLOBALS['strSkinBasePath'] . 'download.tpl',
         'contentType' => $_strType,
         'contentData' => $_arrayMetadata
