@@ -8,8 +8,8 @@
 $strArtemisLiveURL = 'linux.palemoon.org';
 $strArtemisDevURL = null;
 $strArtemisURL = $strArtemisLiveURL;
-$strArtemisSiteName = 'Pale Moon - Linux';
-$strArtemisVersion = '1.5.0a1';
+$strArtemisSiteName = 'Pale Moon for Linux';
+$strArtemisVersion = '1.5.0b1';
 $strArtemisDatastore = './datastore/';
 $boolDebugMode = false;
 
