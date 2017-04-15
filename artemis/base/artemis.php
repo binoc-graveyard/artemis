@@ -145,6 +145,17 @@ function endsWith($haystack, $needle)
 
 // ============================================================================
 
+// == | Function: funcFormatSize |=============================================
+
+function funcFormatSize( $bytes )
+{
+        $types = array( 'Bytes', 'KB', 'MB', 'GB', 'TB', 'PB' );
+        for( $i = 0; $bytes >= 1024 && $i < ( count( $types ) -1 ); $bytes /= 1024, $i++ );
+                return( round( $bytes, 2 ) . " " . $types[$i] );
+}
+
+// ============================================================================
+
 // == | Main | ================================================================
 
 if ($_SERVER['SERVER_NAME'] == $strArtemisDevURL) {
