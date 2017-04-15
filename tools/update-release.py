@@ -123,9 +123,9 @@ for _value in listTarballs:
     if ('palemoon' in _value or 'pminstaller' in _value) and not 'unstable' in _value:
         if 'palemoon' in _value:
             if 'x86_64' in _value:
-                _arch = 'linux64-release'
+                _arch = 'linux64_release'
             else:
-                _arch = 'linux32-release'
+                _arch = 'linux32_release'
 
             dictManifest[_arch] = {
                 'file' : _value,
@@ -135,7 +135,7 @@ for _value in listTarballs:
                 'sig' : _sig
             }
         elif 'pminstaller' in _value:
-            dictManifest['linux-installer'] = {
+            dictManifest['linux_installer'] = {
                 'file' : _value,
                 'version' : _version,
                 'size' : _size,
@@ -143,7 +143,7 @@ for _value in listTarballs:
                 'sig' : _sig
             }
     elif 'unstable' in _value:
-        dictManifest['linux64-unstable'] = {
+        dictManifest['linux64_unstable'] = {
             'file' : _value,
             'version' : _version,
             'size' : _size,
