@@ -116,7 +116,7 @@ function funcGeneratePage($_array) {
 require_once($arrayModules['readManifest']);
 
 if ($strRequestPath == '/download/') {
-    funcGeneratePage(funcGenDownloadContent('download'));
+    funcGeneratePage(funcGenDownloadContent('release'));
 }
 else {
     if (array_key_exists($strRequestPath, $arrayStaticPages)) {
