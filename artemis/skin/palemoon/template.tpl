@@ -44,11 +44,11 @@
                         <a href="#">Download</a>
                         <ul class="ul_ch">
                             <li class="li_nc">
-                                <a href="#">Pale Moon for Linux</a>
+                                <a href="#">Pale Moon for Linux ></a>
                                 <ul class="ul_ch">
                                     <li class="li_nc"><a href="/download/installer/">Installer</a></li>
                                     <li class="li_nc"><a href="/download/mainline/">Mainline binaries</a></li>
-                                    <li class="li_nc"><a style="color: rgb(234, 160, 153);" href="/download/unstable/"><small><small>[DEV]</small></small>Unstable versions</a></li>
+                                    <li class="li_nc"><a style="color: rgb(234, 160, 153);" href="/download/unstable/"><small><small>[DEV]</small></small> Unstable versions</a></li>
                                 </ul>
                             </li>
                             <li class="li_nc"><a href="//addons.palemoon.org/language-packs/" target="_blank">Language Packs</a></li>

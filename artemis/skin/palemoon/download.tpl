@@ -25,19 +25,29 @@
     PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux_installer.file}.sig">[Sig]</a></p>
 {/if}
 {elseif $PAGE_TYPE == 'mainline'}
-<h1>Download Pale Moon for Linux release binaries</h1>
-<p>
-    {$PAGE_DATA.linux64_release.file} <br />
-    {$PAGE_DATA.linux64_release.version} <br />
-    {$PAGE_DATA.linux64_release.displaySize} <br />
-    {$PAGE_DATA.linux64_release.hash} <br />
-</p>
-<p>
-    {$PAGE_DATA.linux32_release.file} <br />
-    {$PAGE_DATA.linux32_release.version} <br />
-    {$PAGE_DATA.linux32_release.displaySize} <br />
-    {$PAGE_DATA.linux32_release.hash} <br />
-</p>
+    <h1>Download Pale Moon for Linux release binaries</h1>
+    {if $PAGE_DATA.linux64_release.version == $PAGE_DATA.linux32_release.version}
+    <h3>Latest version: {$PAGE_DATA.linux64_release.version}</h3>
+
+    <p>If you prefer not to use <a href="/download/installer/">the installer</a>, you can download a tar.bz2 here instead. To use, simply extract the tarball anywhere you like and execute the "palemoon" file inside it, or follow the instructions <a href="/help/installation/">here</a> if you want to install manually. Please be sure to download the correct archive that matches the architecture of your OS.</p>
+
+    <h3>Download links:</h3>
+
+    <p><a href="/datastore/release/{$PAGE_DATA.linux64_release.file}">Download x64 <strong>tar.bz2</strong> (direct download)</a><br />
+    Size: {$PAGE_DATA.linux64_release.displaySize}
+    SHA-256 checksum: {$PAGE_DATA.linux64_release.hash}<br />
+    PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux64_release.file}.sig">[Sig]</a></p>
+
+    <p><a href="/datastore/release/{$PAGE_DATA.linux32_release.file}">Download x86 <strong>tar.bz2</strong> (direct download)</a><br />
+    Size: {$PAGE_DATA.linux32_release.displaySize}
+    SHA-256 checksum: {$PAGE_DATA.linux32_release.hash}<br />
+    PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux32_release.file}.sig">[Sig]</a></p>
+
+    <p>For more information, please read the <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">release notes</a>.</p>
+{else}
+    <h3>Mainstream Binaries are currently unavailable. Please try again later.</h3>
+    <p><small>Error: i686/x86-64 version mismatch</small>
+{/if}
 {elseif $PAGE_TYPE == 'unstable'}
 <h1>Download Pale Moon for Linux unstable binaries</h1>
 <p>
