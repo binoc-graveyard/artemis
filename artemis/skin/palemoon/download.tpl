@@ -5,7 +5,7 @@
     {$PAGE_DATA.linux64-installer.version} <br />
     {$PAGE_DATA.linux64-installer.size} <br />
     {$PAGE_DATA.linux64-installer.hash} <br />
-    {$PAGE_DATA.linux64-installer.file}.sig <br />
+    {$PAGE_DATA.linux64-installer.file}\.sig <br />
 </p>
 {elseif $PAGE_TYPE == 'mainline'}
 <h1>Download Pale Moon for Linux release binaries</h1>
@@ -14,14 +14,14 @@
     {$PAGE_DATA.linux64-release.version} <br />
     {$PAGE_DATA.linux64-release.size} <br />
     {$PAGE_DATA.linux64-release.hash} <br />
-    {$PAGE_DATA.linux64-release.file}.sig <br />
+    {$PAGE_DATA.linux64-release.file}\.sig <br />
 </p>
 <p>
     {$PAGE_DATA.linux32-release.file} <br />
     {$PAGE_DATA.linux32-release.version} <br />
     {$PAGE_DATA.linux32-release.size} <br />
     {$PAGE_DATA.linux32-release.hash} <br />
-    {$PAGE_DATA.linux32-release.file}.sig <br />
+    {$PAGE_DATA.linux32-release.file}\.sig <br />
 </p>
 {elseif $PAGE_TYPE == 'unstable}
 <h1>Download Pale Moon for Linux unstable binaries</h1>
