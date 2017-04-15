@@ -6,10 +6,10 @@
 // == | Vars | ================================================================
 
 $strArtemisLiveURL = 'linux.palemoon.org';
-$strArtemisDevURL = $strArtemisLiveURL;
+$strArtemisDevURL = null;
 $strArtemisURL = $strArtemisLiveURL;
 $strArtemisSiteName = 'Pale Moon for Linux';
-$strArtemisVersion = '1.5.0b1';
+$strArtemisVersion = '1.5.0';
 $strArtemisDatastore = './datastore/';
 $boolDebugMode = false;
 
