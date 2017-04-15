@@ -116,7 +116,7 @@ function funcGeneratePage($_array) {
 
 require_once($arrayModules['readManifest']);
 
-if (startsWith($strRequestPath, '/download/mainline/')) {
+if (startsWith($strRequestPath, '/download/')) {
     if ($strRequestPath == '/download/installer/') {
         funcGeneratePage(funcGenDownloadContent('installer'));
     }
