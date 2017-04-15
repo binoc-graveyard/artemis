@@ -28,7 +28,7 @@ if ($arrayManifest['linux64_release']['version'] != $arrayManifest['linux32_rele
 
 if ($strRequestFunction == 'latest') {
     funcSendHeader('text');
-    $arrayManifest['linux64_release']['version'];
+    print($arrayManifest['linux64_release']['version']);
 }
 elseif ($strRequestFunction == 'download') {
     if ($strRequestArch == null || $strRequestVersion == null) {
