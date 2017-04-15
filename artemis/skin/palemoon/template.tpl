@@ -36,7 +36,7 @@
                             </li>
                             <li class="li_nc"><a href="/installer-release-notes/" >pminstaller Release notes</a>
                             </li>
-                            <li class="li_nc"><a href="//web-beta.archive.org/web/20170319043306/http://www.palemoon.org/donations.shtml" target="_blank">Donations and Support</a>
+                            <li class="li_nc"><a href="//www.palemoon.org/donations.shtml" target="_blank">Donations and Support</a>
                             </li>
                         </ul>
                     </li>
