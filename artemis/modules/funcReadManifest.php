@@ -3,7 +3,7 @@
 
 function funcReadManifest($_slug) {
     
-    $_manifestFile = 'artemis.manifest';
+    $_manifestFile = 'artemus.manifest';
     
     if (file_exists($GLOBALS['strArtemisDatastore'] . $_slug . '/' . $_manifestFile)) {
         $_manifest = file_get_contents($GLOBALS['strArtemisDatastore'] . $_slug . '/' . $_manifestFile);
