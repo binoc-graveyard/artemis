@@ -12,7 +12,7 @@
         <li>If you receive a &quot;Gtk-WARNING **: cannot open display&quot; error when trying to run the installer, ensure that xhost is installed on your system then try to run the installer again.</li>
         <li>The installer may not run on some &quot;lightweight&quot; distributions since the standard command line tools use busybox (which does not implement all features of the command line tools).</li>
         <li>If the installer does not run because the built-in copy of yad complains about being unable to load a particular library, then you likely do not have the basic dependencies required for any recent Mozilla based product. Please update the related libraries and try again.</li>
-        <li>If you have any specialized requirements that the installer does not serve out of the box, then please use the <a href="/web/20170319043840/http://linux.palemoon.org/help/installation/">manual instructions</a> to install Pale Moon.</li>
+        <li>If you have any specialized requirements that the installer does not serve out of the box, then please use the <a href="/help/installation/">manual instructions</a> to install Pale Moon.</li>
         <li>For further information, please check the pminstaller <a href="/information/installer-release-notes/">release notes</a> or visit the <a href="https://forum.palemoon.org/viewforum.php?f=37" target="_blank">forum</a>.</li>
     </ul>
 
