@@ -29,6 +29,38 @@
                             <li class="li_nc"><a href="/" target="_self">Pale Moon for Linux site</a></li>
                         </ul>
                     </li>
+                    <li class="li_nc">
+                        <a href="#" >Information</a>
+                        <ul class="ul_ch">
+                            <li class="li_nc"><a href="//www.palemoon.org/releasenotes.shtml" target="_blank">Pale Moon Release notes</a>
+                            </li>
+                            <li class="li_nc"><a href="/installer-release-notes/" >pminstaller Release notes</a>
+                            </li>
+                            <li class="li_nc"><a href="//web-beta.archive.org/web/20170319043306/http://www.palemoon.org/donations.shtml" target="_blank">Donations and Support</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="li_hc">
+                        <a href="#">Download</a>
+                        <ul class="ul_ch">
+                            <li class="li_nc"><a href="/download/">Pale Moon for Linux</a></li>
+                            <li class="li_nc"><a href="//addons.palemoon.org/language-packs/" target="_blank">Language Packs</a></li>
+                            <li class="li_nc"><a href="//www.palemoon.org/archived.shtml" target="_blank">Archived versions</a></li>
+                        </ul>
+                    </li>
+                    <li class="li_nc">
+                        <a href="#" >Help</a>
+                        <ul class="ul_ch">
+                            <li class="li_nc"><a href="https://forum.palemoon.org/viewforum.php?f=37" target="_blank">Forum</a>
+                            </li>
+                            <li class="li_nc"><a href="/help/faq/">F.A.Q.</a>
+                            </li>
+                            <li class="li_nc"><a href="/help/installation/">Manual Installation</a>
+                            </li>
+                            <li class="li_nc"><a href="http://developer.palemoon.org/Developer_Guide:Build_Instructions/Pale_Moon/Linux" target="_blank">Build Pale Moon yourself</a>
+                            </li>
+                        </ul>
+                    </li>
                  </ul>
             </span>
             <span class="alignright" style="margin-top: 2px; margin-right: 15px;">
