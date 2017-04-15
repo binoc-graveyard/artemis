@@ -39,12 +39,13 @@ $arrayStaticPages = array(
 
 // == | funcGenDownloadContent | ==============================================
 
-function funcGenDownloadContent($_strSlug) {
-    $_arrayMetadata = funcReadManifest($_strSlug);
+function funcGenDownloadContent($_strType) {
+    $_arrayMetadata = funcReadManifest('release');
     
     $arrayPage = array(
         'title' => 'Download',
         'contentTemplate' => $GLOBALS['strSkinBasePath'] . 'download.tpl',
+        'contentType' => $_strType,
         'contentData' => $_arrayMetadata
     );
     
@@ -115,8 +116,11 @@ function funcGeneratePage($_array) {
 
 require_once($arrayModules['readManifest']);
 
-if ($strRequestPath == '/download/') {
-    funcGeneratePage(funcGenDownloadContent('release'));
+if ($strRequestPath == '/download/unstable/') {
+    funcGeneratePage(funcGenDownloadContent('unstable'));
+}
+elseif ($strRequestPath == '/download/') {
+    funcGeneratePage(funcGenDownloadContent('mainline'));
 }
 else {
     if (array_key_exists($strRequestPath, $arrayStaticPages)) {
