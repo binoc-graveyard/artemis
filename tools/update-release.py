@@ -153,10 +153,10 @@ for _value in listTarballs:
 
 print(funcGenJson(dictManifest))
 
-fileManifest = open(strPathDatastore + 'artemus.manifest', 'wb', 0)
+fileManifest = open(strPathDatastore + 'artemis.manifest', 'wb', 0)
 fileManifest.write(funcGenJson(dictManifest))
 fileManifest.close()
-funcOutputMessage('statusGen', 'Wrote artemus.manifest to ' + strPathDatastore)
+funcOutputMessage('statusGen', 'Wrote artemis.manifest to ' + strPathDatastore)
 
 
 
