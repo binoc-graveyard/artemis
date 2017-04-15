@@ -116,11 +116,19 @@ function funcGeneratePage($_array) {
 
 require_once($arrayModules['readManifest']);
 
-if ($strRequestPath == '/download/unstable/') {
-    funcGeneratePage(funcGenDownloadContent('unstable'));
-}
-elseif ($strRequestPath == '/download/') {
-    funcGeneratePage(funcGenDownloadContent('mainline'));
+if (startsWith($strRequestPath, '/download/mainline/') {
+    if ($strRequestPath == '/download/installer/') {
+        funcGeneratePage(funcGenDownloadContent('installer'));
+    }
+    elseif ($strRequestPath == '/download/mainline/') {
+        funcGeneratePage(funcGenDownloadContent('mainline'));
+    }
+    elseif ($strRequestPath == '/download/unstable/') {
+        funcGeneratePage(funcGenDownloadContent('unstable'));
+    }
+    else {
+        funcRedirect('/download/installer/');
+    }
 }
 else {
     if (array_key_exists($strRequestPath, $arrayStaticPages)) {
