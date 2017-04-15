@@ -34,12 +34,12 @@
     <h3>Download links:</h3>
 
     <p><a href="/datastore/release/{$PAGE_DATA.linux64_release.file}">Download x64 <strong>tar.bz2</strong> (direct download)</a><br />
-    Size: {$PAGE_DATA.linux64_release.displaySize}
+    Size: {$PAGE_DATA.linux64_release.displaySize}<br />
     SHA-256 checksum: {$PAGE_DATA.linux64_release.hash}<br />
     PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux64_release.file}.sig">[Sig]</a></p>
 
     <p><a href="/datastore/release/{$PAGE_DATA.linux32_release.file}">Download x86 <strong>tar.bz2</strong> (direct download)</a><br />
-    Size: {$PAGE_DATA.linux32_release.displaySize}
+    Size: {$PAGE_DATA.linux32_release.displaySize}<br />
     SHA-256 checksum: {$PAGE_DATA.linux32_release.hash}<br />
     PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux32_release.file}.sig">[Sig]</a></p>
 
