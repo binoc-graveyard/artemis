@@ -43,13 +43,7 @@ $arrayComponents = array(
 );
 
 $arrayModules = array(
-    'dbAddons' => $strModulesPath . 'db/addons.php',
-    'dbLangPacks' => $strModulesPath . 'db/langPacks.php',
-    'dbSearchPlugins' => $strModulesPath . 'db/searchPlugins.php',
-    'dbAUSExternals' => $strModulesPath . 'db/ausExternals.php',
-    'dbCategories' => $strModulesPath . 'db/categories.php',
     'readManifest' => $strModulesPath . 'funcReadManifest.php',
-    'processContent' => $strModulesPath . 'funcProcessContent.php',
     'vc' => $strGlobalLibPath . 'nsIVersionComparator.php',
     'smarty' => $strGlobalLibPath . 'smarty/Smarty.class.php'
 );

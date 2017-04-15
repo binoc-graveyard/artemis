@@ -113,6 +113,8 @@ function funcGeneratePage($_array) {
 
 // == | Main | ================================================================
 
+require_once($arrayModules['readManifest']);
+
 if ($strRequestPath == '/download/') {
     funcGeneratePage(funcGenDownloadContent('download'));
 }
