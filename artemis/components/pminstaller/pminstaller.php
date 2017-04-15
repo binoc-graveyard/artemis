@@ -46,7 +46,8 @@ elseif ($strRequestFunction == 'download') {
     }
     
     if ($strRequestVersion == $arrayManifest[$strArch]['version']) {
-        print("funcRedirect('http://' . $strArtemisURL . '/datastore/release/' . $strRequestVersion == $arrayManifest[$strArch]['file'])");
+        //funcRedirect('http://' . $strArtemisURL . '/datastore/release/' . $strRequestVersion == $arrayManifest[$strArch]['file']);
+        print('http://' . $strArtemisURL . '/datastore/release/' . $strRequestVersion == $arrayManifest[$strArch]['file']);
     }
     else {
         funcSendHeader('404');
