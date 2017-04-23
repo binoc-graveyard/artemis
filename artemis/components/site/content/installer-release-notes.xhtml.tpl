@@ -1,5 +1,16 @@
 <h1>Pale Moon for Linux installer: Release notes</h1>
 
+<h3>0.2.3 (2017-04-23)</h3>
+
+<p>This is a very small maintenance release to account for changes to the Pale Moon for Linux site.</p>
+
+<p>Fixes/changes:</p>
+
+<ul>
+        <li>Updates used URL's to account for changes in the Pale Moon for Linux site backend.</li>
+        <li>Only the latest version of Pale Moon can be downloaded and installed (installing previous versions is no longer supported). If you want a previous version of the browser, you'll have to download and extract it manually.</li>
+</ul>
+
 <h3>0.2.2 (2016-03-11)</h3>
 
 <p>This is a maintenance release to fix an instance that would cause the installer to hang, as well as some other fixes/improvements.</p>
