@@ -68,7 +68,7 @@ function funcGenDownloadContent($_strType) {
 
 // == | funcGeneratePage | ==============================================
 
-function funcGeneratePage($_array) {
+function funcGeneratePage($_array, $_enableAB = false) {
     // Get the required template files
     $_strSiteTemplate = file_get_contents($GLOBALS['strSkinBasePath'] . 'template.tpl');
     $_strStyleSheet = file_get_contents($GLOBALS['strSkinBasePath'] . 'stylesheet.tpl');
@@ -113,6 +113,11 @@ function funcGeneratePage($_array) {
     
     if (array_key_exists('contentType', $_array)) {
         $libSmarty->assign('PAGE_TYPE', $_array['contentType']);
+    }
+
+    // Enable AB if true or on the root index
+    if ($_enableAB == true || endsWith($_array['contentTemplate'], 'frontpage.xhtml.tpl') {
+        $libSmarty->assign('SITE_AB', true);
     }
     
     // Send html header and pass the final template to Smarty
