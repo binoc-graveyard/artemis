@@ -116,7 +116,7 @@ function funcGeneratePage($_array, $_enableAB = false) {
     }
 
     // Enable AB if true or on the root index
-    if ($_enableAB == true || endsWith($_array['contentTemplate'], 'frontpage.xhtml.tpl') {
+    if ($_enableAB == true || endsWith($_array['contentTemplate'], 'frontpage.xhtml.tpl')) {
         $libSmarty->assign('SITE_AB', true);
     }
     
