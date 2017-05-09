@@ -389,7 +389,7 @@ z-index:998;
 }
 /* end of mainmenu css - change*/
 
-{if $SITE_AB}
+{if $SITE_AB == true}
 #OKjbdp99tsfsf {
     display: none;
     margin-bottom: 15px;

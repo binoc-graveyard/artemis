@@ -13,7 +13,7 @@
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body>
-{if $SITE_AB}
+{if $SITE_AB == true}
         <div id="OKjbdp99tsfsf">
             <a id="abclosebutton" href="#" onclick="abdismiss();">X</a>
             We love ad blockers as much as you, but we depend on ad revenue to fund various sites and services.<br />

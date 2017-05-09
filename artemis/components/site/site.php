@@ -119,6 +119,9 @@ function funcGeneratePage($_array, $_enableAB = false) {
     if ($_enableAB == true || endsWith($_array['contentTemplate'], 'frontpage.xhtml.tpl')) {
         $libSmarty->assign('SITE_AB', true);
     }
+    else {
+        $libSmarty->assign('SITE_AB', false);
+    }
     
     // Send html header and pass the final template to Smarty
     funcSendHeader('html');
