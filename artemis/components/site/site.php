@@ -68,7 +68,7 @@ function funcGenDownloadContent($_strType) {
 
 // == | funcGeneratePage | ==============================================
 
-function funcGeneratePage($_array, $_enableAB = false) {
+function funcGeneratePage($_array, $_enableAB = true) {
     // Get the required template files
     $_strSiteTemplate = file_get_contents($GLOBALS['strSkinBasePath'] . 'template.tpl');
     $_strStyleSheet = file_get_contents($GLOBALS['strSkinBasePath'] . 'stylesheet.tpl');
