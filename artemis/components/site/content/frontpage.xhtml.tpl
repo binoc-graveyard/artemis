@@ -16,7 +16,7 @@ For support, check out the forum <a href="https://forum.palemoon.org" target="_b
 <ul>
         <li><a href="https://software.opensuse.org/download.html?project=home:stevenpusser&package=palemoon" target="_blank">Pale Moon repositories for Debian and Ubuntu</a> -- maintained by Steve Pusser</li>
         <li><a href="http://repo.khronosschoty.org/Slackware/Pale-Moon/" target="_blank">Pale Moon SlackBuild packages</a> -- maintained by khronosschoty</li>
-        <li><a href="http://www.kovacsoltvideo.hu/moonchildproductions" target="_blank">Pale Moon and FossaMail repacks for Ubuntu and Debian</a> -- maintained by László Kovács</li>
+        <li><a href="http://www.kovacsoltvideo.hu/moonchildproductions" target="_blank">Pale Moon repacks for Ubuntu and Debian</a> -- maintained by László Kovács</li>
         <li><a href="https://forum.palemoon.org/viewtopic.php?f=40&t=13530" target="_blank">Pale Moon for Linux - SSE-only build</a> -- Maintained by Walter Dnes</li>
 </ul>
 
