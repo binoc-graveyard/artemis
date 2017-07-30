@@ -17,7 +17,10 @@
 }
 
 html {
-  min-height: 100%;
+
+    min-height: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 body {
