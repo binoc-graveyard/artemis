@@ -57,6 +57,8 @@ body,td,th {
     min-width: 760px;
     max-width: 1200px;
   	margin: 0 auto;
+    margin-left: 3px;
+    margin-right: 3px;
 	border: 1px solid;
 	border-color: #888888;
 	text-align: left;
