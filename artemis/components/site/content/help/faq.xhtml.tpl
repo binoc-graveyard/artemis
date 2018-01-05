@@ -4,7 +4,7 @@
 
 <ul>
 	<li><a href="#privateflag">The -private flag does not work in Pale Moon.</a></li>
-	<li><a href="#html5vid">Some HTML5 videos do not work!</a></li>
+	<li><a href="#html5vid">HTML5 videos do not work!</a></li>
 </ul>
 
 <h3>Installation</h3>
@@ -27,7 +27,7 @@
 <h3>Problems</h3>
 
 <ul>
-	<li><a href="#badmenuentry">Pale Moons menu entry does not show up or work properly.</a></li>
+	<li><a href="#badmenuentry">Pale Moon's menu entry does not show up or work properly.</a></li>
 	<li><a href="#clickandcrash">Pale Moon crashes if I try to click on any of the menus (File, Edit...)</a></li>
 </ul>
 
@@ -37,6 +37,7 @@
 	<li><a href="#portable">Is there a portable version of Pale Moon for Linux?</a></li>
 	<li><a href="#distropkg">Will there be a package for $distro?</a></li>
 	<li><a href="#updater">Pale Moon does not have an internal updater!</a></li>
+	<li><a href="#forum">Additional support</a></li>
 </ul>
 
 <hr/>
@@ -46,9 +47,9 @@
 
 <p>The <em>-private</em> flag is designed in this way so as not to tell the user that Pale Moon is in private browsing mode. Try the <em>-private-window</em> flag instead.</p>
 
-<p><strong id="html5vid">Some HTML5 videos do not work!</strong></p>
+<p><strong id="html5vid">HTML5 videos do not work!</strong></p>
 
-<p>Pale Moon currently uses GStreamer 1.x to play HD H.264 video. If some HTML5 videos don't play, ensure that you have the gstreamer1-good-plugins and gst-libav installed on your system.</p>
+<p>Pale Moon requires FFmpeg (specifically the libavcodec component) to play HD H.264 videos. If you're having trouble getting HD HTML5 videos to play, please ensure that you have the libavcodec package installed on your system. Note that on some distros, you will need to install libavcodec from a "non-free" repo.</p>
 
 <h2>Installation</h2>
 
@@ -110,7 +111,6 @@ You can also put these export statements in /etc/profile, should you need them t
 
 <p>It is preferable to install Flash from your distros official repositories if possible. Sometimes a "non-free" branch must be enabled in the package management tool to get closed source software through the repositories.<br/>
 <br/>
-To install it from the GZIP file available at <a href="https://www.adobe.com/products/flashplayer/distribution3.html">Adobes Flash Player distribution page</a>, copy the contents of /usr directory in the archive to the systems /usr and the libflashplayer.so to /usr/lib/mozilla/plugins.</p>
 
 <p><strong id="extensions">Extensions</strong></p>
 
@@ -120,7 +120,7 @@ To install it from the GZIP file available at <a href="https://www.adobe.com/pro
 
 <h2>Problems</h2>
 
-<p><strong id="badmenuentry">Pale Moons menu entry does not show up or work properly.</strong></p>
+<p><strong id="badmenuentry">Pale Moon's menu entry does not show up or work properly.</strong></p>
 
 <ul>
 	<li>If the icon does not appear, update the icon cache by running the following:</li>
@@ -166,9 +166,15 @@ To install it from the GZIP file available at <a href="https://www.adobe.com/pro
 
 <p><strong id="updater">Pale Moon does not have an internal updater!</strong></p>
 
-<p>The <a href="/download/installer/">pminstaller tool</a> has a built-in updater, however this results in a full download. There is no internal updater built into Pale Moon for Linux at this time. This is by design:</p>
+<p>There is no internal updater built into Pale Moon for Linux at this time. This is by design:</p>
 
 <ul>
 	<li>The internal updater requires making mar archives and/or binary diffs, which is not done at this time, but is on the roadmap and we are going to look into it at some point.</li>
 	<li>Most users are likely to install it into /opt which is unreadable to most except the superuser, and running the browser as superuser is not considered proper security practice.</li>
 </ul>
+
+<p>In the absence of an internal updater, the <a href="/download/installer/">pminstaller tool</a> can be used to update Pale Moon, or you can update manually.</p>
+
+<p><strong id="forum">Additional support</strong></p>
+
+<p>For additional support, please head over to the <a href="https://forum.palemoon.org" target="_blank">forum</a>.</p>
