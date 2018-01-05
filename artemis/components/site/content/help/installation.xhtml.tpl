@@ -1,6 +1,6 @@
 <h1>{$PAGE_TITLE}</h1>
 
-<p>Installation, uninstallation and upgrades are normally managed with the <a href="/download/installer/">pminstaller</a> tool. If for any reason you prefer not to use the installer, you can use the instructions below to manually install Pale Moon instead.</p>
+<p>Installation, uninstallation and updates can be managed using the <a href="/download/installer/">pminstaller</a> tool. If for any reason you prefer not to use the installer, you can use the instructions below to manually install Pale Moon instead.</p>
 
 <h2>Manual method</h2>
 
@@ -34,7 +34,7 @@ ln -s /opt/palemoon/browser/chrome/icons/default/default48.png /usr/share/icons/
 ln -s /opt/palemoon/browser/icons/mozicon128.png /usr/share/icons/hicolor/128x128/apps/palemoon.png</code></pre>
 
 <ul>
-    <li>If you are using a Debian (based) distro, you might want to inform update-alternatives about the presence of Pale Moon (and make it available as x-www-browser and gnome-www-browser). An arbitrary score of 100 has been used here, but you can adjust it according to your needs:</li>
+    <li>If you are using a Debian-based distro, you might want to inform update-alternatives about the presence of Pale Moon (and make it available as x-www-browser and gnome-www-browser). An arbitrary score of 100 has been used here, but you can adjust it according to your needs:</li>
 </ul>
 
 <pre><code>update-alternatives --install /usr/bin/gnome-www-browser gnome-www-browser /usr/bin/palemoon 100</code></pre>
@@ -67,7 +67,7 @@ Categories=Network;WebBrowser;Internet
 MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;video/webm;application/x-xpinstall;
 StartupNotify=true</code></pre>
 
-<h3>Upgrades</h3>
+<h3>Updates</h3>
 
 <ul>
     <li>Delete the directory /opt/palemoon:</li>
@@ -92,7 +92,7 @@ StartupNotify=true</code></pre>
 <pre><code>rm /home/*/.local/share/applications/userapp-Pale\ Moon-*.desktop /home/*/.local/share/applications/mimeinfo.cache</code></pre>
 
 <ul>
-    <li>If you used a Debian (based) distro and registered Pale Moon with update-alternatives, then remove it from the list of browsers maintained by it:</li>
+    <li>If you used a Debian-based distro and registered Pale Moon with update-alternatives, then remove it from the list of browsers maintained by it:</li>
 </ul>
 
 <pre><code>update-alternatives --remove gnome-www-browser /usr/bin/palemoon</code></pre>
