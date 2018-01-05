@@ -1,5 +1,14 @@
 <h1>Pale Moon for Linux installer: Release notes</h1>
 
+<h3>0.2.4 (2018-01-05)</h3>
+
+<p>Fixes/changes:</p>
+
+<ul>
+        <li>Remove the version selection dialog - only downloading and installing the latest release of Pale Moon is supported.</li>
+        <li>Show a default prompt text if none is configured in sudo.</li>
+</ul>
+
 <h3>0.2.3 (2017-04-23)</h3>
 
 <p>This is a very small maintenance release to account for changes to the Pale Moon for Linux site.</p>
