@@ -27,7 +27,6 @@ For support, check out the forum <a href="https://forum.palemoon.org" target="_b
         <li>PCLinuxOS</li>
         <li>Puppy Linux</li>
         <li>MEPIS/MX-15</li>
-        <li>Arch User Repository (AUR)</li>
         <li>Gentoo Overlays</li>
         <li>Slackbuilds</li>
 </ul>
