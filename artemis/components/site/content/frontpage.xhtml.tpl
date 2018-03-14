@@ -29,6 +29,7 @@ For support, check out the forum <a href="https://forum.palemoon.org" target="_b
         <li>MEPIS/MX-15</li>
         <li>Gentoo Overlays</li>
         <li>Slackbuilds</li>
+        <li>TinyCore Linux</li>
 </ul>
 
 <h3>Linux system requirements</h3>
