@@ -57,7 +57,11 @@
 {/if}
 {elseif $PAGE_TYPE == 'unstable'}
     <h1>Download Pale Moon for Linux unstable binaries</h1>
-    <p>Please read the concise <a href="//www.palemoon.org/unstable/releasenotes.shtml" target="_blank">release notes</a> about this development version.</p>
+    <p><strong>This version of Pale Moon is built somewhat regularly from the current development source of the browser and should only be considered for use by people who wish to help catch bugs before release.</strong></p>
+
+    <p>Make sure you make regular backups of your Pale Moon profile as the unstable version could cause data loss. <strong>The unstable versions do not use a separate user profile</strong>, so if you decide to use this build, your release-version profile will be used and potentially be at risk.</p>
+
+    <p>Please read the release notes about this development version here: <a href="//www.palemoon.org/unstable/releasenotes.shtml" target="_blank">http://www.palemoon.org/unstable/releasenotes.shtml</a></p>
 
     <h3>Reporting bugs</h3>
 
@@ -82,11 +86,11 @@
 
     <h2>Updating</h2>
 
-    <p>Note that these versions <span style="font-weight: bold; color: rgb(204, 0, 0);">will not update to later builds automatically!</span> You will have to download and update them manually. New unstable builds will be <a href="https://forum.palemoon.org/viewtopic.php?f=37&amp;p=103490#p103490" target="_blank">announced on the forum</a> as they become available.</p>
+    <p>The unstable versions have their own update channel which is separate from the official releases. The preferred way of updating is to let the internal updater do its task (default setting is to update automatically). Note that in order for the internal updater to work the tarball must be extracted to a user-writable location.</p>
 
     <h2>Download</h2>
 
-    <p>These versions are only available for Linux 64-bit. The tarball has not been signed in order to reduce the amount of Release Engineering overhead required to provide these builds.</p>
+    <p>These unstable versions are only available for Linux 64-bit. The tarball has not been signed in order to reduce the amount of Release Engineering overhead required to provide these builds.</p>
 
     <p><a href="/datastore/release/{$PAGE_DATA.linux64_unstable.file}">Download x64 <strong>tar.bz2</strong> (direct download)</a><br />
     Size: {$PAGE_DATA.linux64_unstable.displaySize}<br />
