@@ -4,7 +4,7 @@
 <br>
 Pale Moon aims to provide close adherence to official web standards and specifications in its implementation (with minimal compromise), and purposefully excludes a number of features to strike a good balance between general use, performance, and technical advancements on the Web.<br>
 <br>
-With the current generation of mainstream browsers, there are also more obvious and not just "under the hood" differences: Pale Moon will continue to provide grouped navigation buttons of a decent size, a bookmarks toolbar that is enabled by default, tabs next to page content by default (easily switchable) and not in the least a functional status bar and more freedom in customization, to name a few things.
+With the current generation of mainstream browsers, there are also more obvious and not just "under the hood" differences: Pale Moon will continue to provide grouped navigation buttons of a decent size, a bookmarks toolbar that is enabled by default, tabs next to page content by default (easily switchable) and not in the least a functional status bar and more freedom in customization, to name a few things.<br>
 <br>
 For additional information, check out the main site <a href="//www.palemoon.org" target="_blank">here</a>.<br>
 For support, check out the forum <a href="https://forum.palemoon.org" target="_blank">here</a>.</p>
@@ -36,16 +36,10 @@ For support, check out the forum <a href="https://forum.palemoon.org" target="_b
 
 <h3>Linux system requirements</h3>
 
-<p>The mainline build of Pale Moon is specifically optimized for modern processers that support the SSE2 instruction set and will not run on older processors lacking SSE2 support.</p>
-<p>If you are unsure if your processor supports SSE2, you can enter the following command into a terminal: <code>grep -om1 sse2 /proc/cpuinfo</code></p>
-<p>If <em>sse2</em> is displayed, then your processor is supported. If no output is displayed, your processor does not support SSE2 and the mainline build will not work. In this case, you will need to use the SSE-only contributed build listed above. 
-
-</p><p>Pale Moon will not run at all without (reasonably updated versions of) the following dependencies:</p>
-
 <ul>
-	<li>GTK+ v2.24</li>
-	<li>GLibc v2.17</li>
-	<li>Pango</li>
-	<li>X.Org</li>
-	<li>libstdc++ 4.3</li>
+        <li>A modern processor (must have SSE2 support as the absolute minimum).</li>
+        <li>1GB of RAM (2GB or more recommended for heavy use).</li>
+        <li>GTK+ v2.24</li>
+        <li>GLibc v2.17</li>
+        <li>libstdc++ 4.3</li>
 </ul>
