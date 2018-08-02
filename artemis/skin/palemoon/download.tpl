@@ -59,13 +59,17 @@
     <h1>Download Pale Moon for Linux unstable binaries</h1>
     <p><strong>This version of Pale Moon is built somewhat regularly from the current development source of the browser and should only be considered for use by people who wish to help catch bugs before release.</strong></p>
 
-    <p>Make sure you make regular backups of your Pale Moon profile as the unstable version could cause data loss. <strong>The unstable versions do not use a separate user profile</strong>, so if you decide to use this build, your release-version profile will be used and potentially be at risk.</p>
+    <p>This unstable version of Pale Moon comes with recognizable unstable branding (a "blood moon") to clearly differentiate it from the official releases.</p>
 
-    <p>Please read the release notes about this development version here: <a href="//www.palemoon.org/unstable/releasenotes.shtml" target="_blank">http://www.palemoon.org/unstable/releasenotes.shtml</a></p>
+    <p>Make sure you make regular backups of your Pale Moon profile as the unstable version may occasionally cause data loss. <strong>The unstable versions do not use a separate user profile</strong>, so if you decide to use this build, your release-version profile will be used and potentially be at risk.</p>
+
+    <h3>Release notes</h3>
+
+    <p>Concise release notes about this development version can be found here: <a href="//www.palemoon.org/unstable/releasenotes.shtml" target="_blank">http://www.palemoon.org/unstable/releasenotes.shtml</a></p>
 
     <h3>Reporting bugs</h3>
 
-    <p>Please report any bugs you find in the <a href="https://github.com/MoonchildProductions/Pale-Moon/issues" target="_blank">issue tracker</a> on GitHub for Pale Moon. When you do so, please <span style="font-weight: bold; color: rgb(204, 0, 0);">check if the bug has already been reported</span> before by others to prevent duplicate entries in the tracker. If you report bugs, make sure to include the build date (as found in the about box) and provide clear information about the bug:</p>
+    <p>Please report any bugs you find in the <a href="https://github.com/MoonchildProductions/UXP/issues" target="_blank">issue tracker</a> on GitHub for Pale Moon. When you do so, please <span style="font-weight: bold; color: rgb(204, 0, 0);">check if the bug has already been reported before by others</span> to prevent duplicate entries in the tracker. If you report bugs, make sure to include the build date (as found in the about box) and provide clear information about the bug:</p>
 
     <ul>
         <li>Clear description of the bug, with a concise and clear title for the issue<br>
@@ -86,11 +90,11 @@
 
     <h2>Updating</h2>
 
-    <p>The unstable versions have their own update channel which is separate from the official releases. The preferred way of updating is to let the internal updater do its task (default setting is to update automatically). Note that in order for the internal updater to work the tarball must be extracted to a user-writable location.</p>
+    <p>The unstable version has its own update channel which is separate from the official releases. The preferred way of updating is to let the internal updater do its task (default setting is to update automatically). Note that in order for the internal updater to work on Linux the browser must be extracted to a user-writable location.</p>
 
     <h2>Download</h2>
 
-    <p>These unstable versions are only available for Linux 64-bit. The tarball has not been signed in order to reduce the amount of Release Engineering overhead required to provide these builds.</p>
+    <p>The unstable version for Linux is only available in 64-bit. There are no 32-bit builds of the unstable version available.</p>
 
     <p><a href="/datastore/release/{$PAGE_DATA.linux64_unstable.file}">Download x64 <strong>tar.bz2</strong> (direct download)</a><br />
     Size: {$PAGE_DATA.linux64_unstable.displaySize}<br />
