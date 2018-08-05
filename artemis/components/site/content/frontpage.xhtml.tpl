@@ -33,13 +33,3 @@ For support, check out the forum <a href="https://forum.palemoon.org" target="_b
         <li>Slackbuilds</li>
         <li>TinyCore Linux</li>
 </ul>
-
-<h3>Linux system requirements</h3>
-
-<ul>
-        <li>A modern processor (must have SSE2 support as the absolute minimum).</li>
-        <li>1GB of RAM (2GB or more recommended for heavy use).</li>
-        <li>GTK+ v2.24</li>
-        <li>GLibc v2.17</li>
-        <li>libstdc++ 4.3</li>
-</ul>

@@ -32,6 +32,20 @@
 
     <h3>New this release: Details about this update can be found in the <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">Release notes.</a></h3>
 
+    <h3>System requirements</h3>
+
+    <p>Pale Moon is specifically optimized for current-day processors and as such requires a reasonably modern system to run properly.</p>
+
+    <ul>
+        <li>A modern Linux distribution. The browser may not work well on old or LTS releases of Linux.</li>
+        <li>A modern processor (must have SSE2 support as the absolute minimum).</li>
+        <li>1GB of RAM (2GB or more recommended for heavy use).</li>
+        <li>GTK+ v2.24</li>
+        <li>GLib 2.22 or higher</li>
+        <li>Pango 1.14 or higher</li>
+        <li>libstdc++ 4.6.1 or higher</li>
+    </ul>
+
     <h3>Download links</h3>
 
     <p>Be sure to download the correct archive that matches the architecture of your OS. To use, simply extract the tarball anywhere you like and execute the "palemoon" file inside it, or follow the instructions <a href="/help/installation/">here</a> if you want to install manually. It is recommended that you extract Pale Moon to a user-writable location so that the internal updater can work as intended to keep your browser up to date.</p>
