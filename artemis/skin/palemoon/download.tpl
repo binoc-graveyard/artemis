@@ -30,9 +30,11 @@
     {if $PAGE_DATA.linux64_release.version == $PAGE_DATA.linux32_release.version}
     <h3>Latest version: {$PAGE_DATA.linux64_release.version}</h3>
 
-    <p>If you prefer not to use <a href="/download/installer/">the installer</a>, you can download a tar.bz2 here instead. To use, simply extract the tarball anywhere you like and execute the "palemoon" file inside it, or follow the instructions <a href="/help/installation/">here</a> if you want to install manually. Please be sure to download the correct archive that matches the architecture of your OS.</p>
+    <h3>New this release: Details about this update can be found in the <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">Release notes.</a></h3>
 
-    <h3>Download links:</h3>
+    <h3>Download links</h3>
+
+    <p>Be sure to download the correct archive that matches the architecture of your OS. To use, simply extract the tarball anywhere you like and execute the "palemoon" file inside it, or follow the instructions <a href="/help/installation/">here</a> if you want to install manually. It is recommended that you extract Pale Moon to a user-writable location so that the internal updater can work as intended to keep your browser up to date.</p>
 
     <p><a href="/datastore/release/{$PAGE_DATA.linux64_release.file}">Download x64 <strong>tar.bz2</strong> (direct download)</a><br />
     Size: {$PAGE_DATA.linux64_release.displaySize}<br />
@@ -49,12 +51,16 @@
     PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux32_release.file}.sig">[Sig]</a>
 {/if}
     </p>
-
-    <p>For more information, please read the <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">release notes</a>.</p>
 {else}
     <h3>Mainstream Binaries are currently unavailable. Please try again later.</h3>
     <p><small>Error: i686/x86-64 version mismatch</small>
 {/if}
+
+    <h3>Other downloads</h3>
+
+    <p>Unstable versions: <a href="/download/unstable/" target="_blank">here</a>.<br />
+    Source code: see the source code page <a href="//www.palemoon.org/sourcecode.shtml" target="_blank">here</a>.<br />
+    Older versions: <a href="//www.palemoon.org/archived.shtml" target="_blank">here</a>.</p>
 {elseif $PAGE_TYPE == 'unstable'}
     <h1>Download Pale Moon for Linux unstable binaries</h1>
     <p><strong>This version of Pale Moon is built somewhat regularly from the current development source of the browser and should only be considered for use by people who wish to help catch bugs before release.</strong></p>
