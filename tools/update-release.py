@@ -41,13 +41,13 @@ import re
 def funcOutputMessage(_messageType, _messageBody):
     _messagePrefix = "{0}:".format(sys.argv[0])
     _errorPrefix = '{0} error:'.format(_messagePrefix)
-    _warnPrefix = '{0} warning:'.format(_messagePrefix)    
+    _warnPrefix = '{0} warning:'.format(_messagePrefix)
     _messageTemplates = {
         'statusGen' : '{0} {1}'.format(_messagePrefix, _messageBody),
         'warnGen' : '{0} {1}'.format(_warnPrefix, _messageBody),
         'errorGen' : '{0} {1}'.format(_errorPrefix, _messageBody)
     }
-    
+
     if _messageType in _messageTemplates:
         print(_messageTemplates[_messageType])
         if _messageType == 'errorGen':
@@ -75,14 +75,14 @@ def funcGenJson(_value):
 # =============================================================================
 
 # ===| function: Generate Checksum |===========================================
- 
+
 def funcChecksum(filename, block_size=65536):
     sha256 = hashlib.sha256()
     with open(filename, 'rb') as f:
         for block in iter(lambda: f.read(block_size), b''):
             sha256.update(block)
     return sha256.hexdigest()
- 
+
 # =============================================================================
 
 strPathCurrent = os.getcwd()
@@ -119,7 +119,7 @@ for _value in listTarballs:
         _version = _version.group(2)[:-1]
     else:
         _version = 'latest'
-    
+
     if ('palemoon' in _value or 'pminstaller' in _value) and not 'unstable' in _value:
         if 'palemoon' in _value:
             if 'x86_64' in _value:

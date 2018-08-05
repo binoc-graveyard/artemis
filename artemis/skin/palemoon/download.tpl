@@ -49,7 +49,7 @@
     PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux32_release.file}.sig">[Sig]</a>
 {/if}
     </p>
-    
+
     <p>For more information, please read the <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">release notes</a>.</p>
 {else}
     <h3>Mainstream Binaries are currently unavailable. Please try again later.</h3>

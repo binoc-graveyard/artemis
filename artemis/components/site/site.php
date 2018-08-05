@@ -41,7 +41,7 @@ $arrayStaticPages = array(
 
 function funcGenDownloadContent($_strType) {
     $_arrayMetadata = funcReadManifest('release');
-    
+
     if ($_strType == 'installer') {
         $_strTitle = 'Download - Installer';
     }
@@ -54,14 +54,14 @@ function funcGenDownloadContent($_strType) {
     else {
         $_strTitle = 'Download';
     }
-    
+
     $arrayPage = array(
         'title' => $_strTitle,
         'contentTemplate' => $GLOBALS['strSkinBasePath'] . 'download.tpl',
         'contentType' => $_strType,
         'contentData' => $_arrayMetadata
     );
-    
+
     return $arrayPage;
 }
 // ============================================================================
@@ -90,7 +90,7 @@ function funcGeneratePage($_array, $_enableAB = true) {
     // Load Smarty
     require_once($GLOBALS['arrayModules']['smarty']);
     $libSmarty = new Smarty();
-    
+
     // Configure Smarty
     $libSmarty->caching = 0;
     $libSmarty->debugging = $GLOBALS['boolDebugMode'];
@@ -106,11 +106,11 @@ function funcGeneratePage($_array, $_enableAB = true) {
     $libSmarty->assign('PAGE_TITLE', $_array['title']);
     $libSmarty->assign('BASE_PATH', substr($GLOBALS['strSkinBasePath'], 1));
     $libSmarty->assign('ARTEMIS_VERSION', $GLOBALS['strArtemisVersion']);
-    
+
     if (array_key_exists('contentData', $_array)) {
         $libSmarty->assign('PAGE_DATA', $_array['contentData']);
     }
-    
+
     if (array_key_exists('contentType', $_array)) {
         $libSmarty->assign('PAGE_TYPE', $_array['contentType']);
     }
@@ -122,7 +122,7 @@ function funcGeneratePage($_array, $_enableAB = true) {
     else {
         $libSmarty->assign('SITE_AB', false);
     }
-    
+
     // Send html header and pass the final template to Smarty
     funcSendHeader('html');
     $libSmarty->display('string:' . $_strSiteTemplate, null, str_replace('/', '_', $GLOBALS['strRequestPath']));

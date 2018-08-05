@@ -23,7 +23,7 @@
 
         <script src="{$BASE_PATH}ads.js?id=somead" type="text/javascript"></script>
         <script src="{$BASE_PATH}abfunctions.js" type="text/javascript"></script>
- {/if}       
+ {/if}
         <div id="PM-Wrapper">
             <div id="PM-Header" class="PM-Wrapper-Width">
                 <img src="{$BASE_PATH}logo.png" class="alignleft" />
@@ -64,7 +64,7 @@
                             </li>
                             <li class="li_nc"><a href="//addons.palemoon.org/language-packs/" target="_blank">Language Packs</a></li>
                             <li class="li_nc"><a href="//www.palemoon.org/archived.shtml" target="_blank">Archived versions</a></li>
-                            
+
                         </ul>
                     </li>
                     <li class="li_nc">

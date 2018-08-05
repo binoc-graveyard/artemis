@@ -40,7 +40,7 @@ $arrayModules = array(
 
 function funcError($_value) {
     die('Error: ' . $_value);
-    
+
     // We are done here
     exit();
 }
@@ -54,7 +54,7 @@ function funcHTTPGetValue($_value) {
     if (!isset($_GET[$_value]) || $_GET[$_value] === '' || $_GET[$_value] === null || empty($_GET[$_value])) {
         return null;
     }
-    else {    
+    else {
         $_finalValue = preg_replace('/[^-a-zA-Z0-9_\-\/\{\}\@\.]/', '', $_GET[$_value]);
         return $_finalValue;
     }
@@ -88,11 +88,11 @@ function funcSendHeader($_value) {
         'css' => 'Content-Type: text/css',
         'artemis' => 'X-Artemis: https://github.com/trav90/artemis/',
     );
-    
+
     if (array_key_exists($_value, $_arrayHeaders)) {
         header($_arrayHeaders['artemis']);
         header($_arrayHeaders[$_value]);
-        
+
         if ($_value == '404') {
             // We are done here
             exit();
@@ -106,7 +106,7 @@ function funcSendHeader($_value) {
 
 function funcRedirect($_strURL) {
 	header('Location: ' . $_strURL , true, 302);
-    
+
     // We are done here
     exit();
 }
