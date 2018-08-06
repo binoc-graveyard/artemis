@@ -24,7 +24,6 @@ $strGlobalLibPath = $_SERVER['DOCUMENT_ROOT'] . '/lib/';
 
 $arrayComponents = array(
     'site' => $strComponentsPath . 'site/site.php',
-    'pminstaller' => $strComponentsPath . 'pminstaller/pminstaller.php',
     '43893' => $strComponentsPath . 'special/special.php'
 );
 
