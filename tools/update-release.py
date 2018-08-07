@@ -87,7 +87,7 @@ def funcChecksum(filename, block_size=65536):
 
 strPathCurrent = os.getcwd()
 strPathDatastore = '/srv/www/linux.palemoon.org/datastore/release/'
-strVersionRegex = r"(palemoon-|pminstaller-)([0-9.ab]+)"
+strVersionRegex = r"(palemoon-)([0-9.ab]+)"
 listFilesRaw = os.listdir(strPathDatastore)
 listTarballs = []
 dictManifest = OrderedDict({})
@@ -120,7 +120,7 @@ for _value in listTarballs:
     else:
         _version = 'latest'
 
-    if ('palemoon' in _value or 'pminstaller' in _value) and not 'unstable' in _value:
+    if ('palemoon' in _value) and not 'unstable' in _value:
         if 'palemoon' in _value:
             if 'x86_64' in _value:
                 _arch = 'linux64_release'
@@ -132,14 +132,6 @@ for _value in listTarballs:
                 'version' : _version,
                 'hash' : _hash,
                 'size' : _size,
-                'sig' : _sig
-            }
-        elif 'pminstaller' in _value:
-            dictManifest['linux_installer'] = {
-                'file' : _value,
-                'version' : _version,
-                'size' : _size,
-                'hash' : _hash,
                 'sig' : _sig
             }
     elif 'unstable' in _value:
