@@ -21,10 +21,6 @@ $arrayStaticPages = array(
         'title' => 'Your browser, your way!',
         'contentTemplate' => $strContentBasePath . 'frontpage.xhtml.tpl',
     ),
-    '/installer-release-notes/' => array(
-        'title' => 'Installer Release Notes',
-        'contentTemplate' => $strContentBasePath . 'installer-release-notes.xhtml.tpl',
-    ),
     '/help/faq/' => array(
         'title' => 'Frequently Asked Questions',
         'contentTemplate' => $strContentBasePath . 'help/faq.xhtml.tpl',
@@ -42,10 +38,7 @@ $arrayStaticPages = array(
 function funcGenDownloadContent($_strType) {
     $_arrayMetadata = funcReadManifest('release');
 
-    if ($_strType == 'installer') {
-        $_strTitle = 'Download - Installer';
-    }
-    elseif ($_strType == 'mainline') {
+    if ($_strType == 'mainline') {
         $_strTitle = 'Download - Binaries';
     }
     elseif ($_strType == 'unstable') {
@@ -138,17 +131,11 @@ function funcGeneratePage($_array, $_enableAB = true) {
 require_once($arrayModules['readManifest']);
 
 if (startsWith($strRequestPath, '/download/')) {
-    if ($strRequestPath == '/download/installer/') {
-        funcGeneratePage(funcGenDownloadContent('installer'));
-    }
-    elseif ($strRequestPath == '/download/mainline/') {
+    if ($strRequestPath == '/download/mainline/') {
         funcGeneratePage(funcGenDownloadContent('mainline'));
     }
     elseif ($strRequestPath == '/download/unstable/') {
         funcGeneratePage(funcGenDownloadContent('unstable'));
-    }
-    else {
-        funcRedirect('/download/installer/');
     }
 }
 else {
