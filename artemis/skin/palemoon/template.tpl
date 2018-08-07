@@ -45,8 +45,6 @@
                         <ul class="ul_ch">
                             <li class="li_nc"><a href="//www.palemoon.org/releasenotes.shtml" target="_blank">Pale Moon Release notes</a>
                             </li>
-                            <li class="li_nc"><a href="/installer-release-notes/" >Installer Release notes</a>
-                            </li>
                             <li class="li_nc"><a href="//www.palemoon.org/donations.shtml" target="_blank">Donations and Support</a>
                             </li>
                         </ul>
@@ -57,7 +55,6 @@
                             <li class="li_nc">
                                 <a href="#">Pale Moon for Linux ></a>
                                 <ul class="ul_ch">
-                                    <li class="li_nc"><a href="/download/installer/">Installer</a></li>
                                     <li class="li_nc"><a href="/download/mainline/">Mainline binaries</a></li>
                                     <li class="li_nc"><a style="color: rgb(234, 160, 153);" href="/download/unstable/"><small><small>[DEV]</small></small> Unstable versions</a></li>
                                 </ul>
