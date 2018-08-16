@@ -11,7 +11,7 @@ For support, check out the forum <a href="https://forum.palemoon.org" target="_b
 
 <h3>Installation:</h3>
 
-<p>Installation, uninstallation and updates can be managed using the <a href="/download/installer/">pminstaller tool</a>. You can also download Pale Moon for Linux as a <a href="/download/mainline/">bzipped tarball</a> that can be extracted and run from any location on your system.</p>
+<p>It is <strong>not</strong> necessary to install Pale Moon to use it. Pale Moon for Linux is distributed as a <a href="/download/mainline/">bzipped tarball</a> that can be extracted and run from any location on your system. If however you prefer to "install" it on your system, you can find instructions to do so <a href="/help/installation/">here</a>.</p>
 
 <p>Additionally, you can install one of these fully-endorsed third-party builds of Pale Moon for Linux:</p>
 
@@ -19,7 +19,6 @@ For support, check out the forum <a href="https://forum.palemoon.org" target="_b
         <li><a href="https://software.opensuse.org/download.html?project=home:stevenpusser&package=palemoon" target="_blank">Pale Moon repositories for Debian and Ubuntu</a> -- maintained by Steve Pusser</li>
         <li><a href="http://repo.khronosschoty.org/Slackware/Pale-Moon/" target="_blank">Pale Moon SlackBuild packages</a> -- maintained by khronosschoty</li>
         <li><a href="http://www.kovacsoltvideo.hu/moonchildproductions" target="_blank">Pale Moon repacks for Ubuntu and Debian</a> -- maintained by László Kovács</li>
-        <li><a href="https://forum.palemoon.org/viewtopic.php?f=40&t=13530" target="_blank">Pale Moon for Linux - SSE-only build</a> -- maintained by Walter Dnes</li>
 </ul>
 
 <p>Pale Moon can also be installed directly from the default repositories of the following distros:</p>
@@ -32,14 +31,4 @@ For support, check out the forum <a href="https://forum.palemoon.org" target="_b
         <li>Gentoo Overlays</li>
         <li>Slackbuilds</li>
         <li>TinyCore Linux</li>
-</ul>
-
-<h3>Linux system requirements</h3>
-
-<ul>
-        <li>A modern processor (must have SSE2 support as the absolute minimum).</li>
-        <li>1GB of RAM (2GB or more recommended for heavy use).</li>
-        <li>GTK+ v2.24</li>
-        <li>GLibc v2.17</li>
-        <li>libstdc++ 4.3</li>
 </ul>

@@ -1,38 +1,27 @@
-{if $PAGE_TYPE == 'installer'}
-    <h1>Download Pale Moon for Linux Installer</h1>
-    <h3>Latest version: {$PAGE_DATA.linux_installer.version}</h3>
-
-    <p>The Pale Moon for Linux installer (also referred to as pminstaller) can be used to install, uninstall, and update Pale Moon for Linux. To use it, simply extract the pminstaller-*.tar.bz2 archive and run the pminstaller.sh file.</p>
-
-    <p>Please note the following:</p>
-
-    <ul>
-        <li>Some file managers treat the pminstaller.sh file as a normal text file and will try to open it as such (in a text editor). In such cases you must run the installer by:<br/><code>/path/to/the/installer/pminstaller.sh</code></li>
-        <li>Do not invoke the installer as root (e.g. &quot;sudo ./pminstaller.sh&quot;), as the installer automatically elevates itself using su(do). On some distros, invoking the installer as rool will strip the XAUTHORITY variable (without which any graphical program cannot run).</li>
-        <li>If you receive a &quot;Gtk-WARNING **: cannot open display&quot; error when trying to run the installer, ensure that xhost is installed on your system then try to run the installer again.</li>
-        <li>The installer may not run on some &quot;lightweight&quot; distributions since the standard command line tools use busybox (which does not implement all features of the command line tools).</li>
-        <li>If the installer does not run because the built-in copy of yad complains about being unable to load a particular library, then you likely do not have the basic dependencies required for any recent Mozilla based product. Please update the related libraries and try again.</li>
-        <li>If you have any specialized requirements that the installer does not serve out of the box, then please use the <a href="/help/installation/">manual instructions</a> to install Pale Moon.</li>
-        <li>For further information, please check the pminstaller <a href="/installer-release-notes/">release notes</a> or visit the <a href="https://forum.palemoon.org/viewforum.php?f=37" target="_blank">forum</a>.</li>
-    </ul>
-
-    <h3>Download links:</h3>
-
-    <p><a href="/datastore/release/{$PAGE_DATA.linux_installer.file}">Download <strong>tar.bz2</strong> (direct download)</a><br />
-    Size: {$PAGE_DATA.linux_installer.displaySize}<br />
-    SHA-256 checksum: {$PAGE_DATA.linux_installer.hash}<br />
-{if $PAGE_DATA.linux_installer.sig == true}
-    PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux_installer.file}.sig">[Sig]</a></p>
-{/if}
-    </p>
-{elseif $PAGE_TYPE == 'mainline'}
+{if $PAGE_TYPE == 'mainline'}
     <h1>Download Pale Moon for Linux release binaries</h1>
     {if $PAGE_DATA.linux64_release.version == $PAGE_DATA.linux32_release.version}
     <h3>Latest version: {$PAGE_DATA.linux64_release.version}</h3>
 
-    <p>If you prefer not to use <a href="/download/installer/">the installer</a>, you can download a tar.bz2 here instead. To use, simply extract the tarball anywhere you like and execute the "palemoon" file inside it, or follow the instructions <a href="/help/installation/">here</a> if you want to install manually. Please be sure to download the correct archive that matches the architecture of your OS.</p>
+    <h3>New this release: Details about this update can be found in the <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">Release notes.</a></h3>
 
-    <h3>Download links:</h3>
+    <h3>System requirements</h3>
+
+    <p>Pale Moon is specifically optimized for current-day processors and as such requires a reasonably modern system to run properly.</p>
+
+    <ul>
+        <li>A modern Linux distribution. The browser may not work well on old or LTS releases of Linux.</li>
+        <li>A modern processor (must have SSE2 support as the absolute minimum).</li>
+        <li>1GB of RAM (2GB or more recommended for heavy use).</li>
+        <li>GTK+ v2.24</li>
+        <li>GLib 2.22 or higher</li>
+        <li>Pango 1.14 or higher</li>
+        <li>libstdc++ 4.6.1 or higher</li>
+    </ul>
+
+    <h3>Download links</h3>
+
+    <p>Be sure to download the correct archive that matches the architecture of your OS. To use, simply extract the tarball anywhere you like and execute the "palemoon" file inside it, or follow the instructions <a href="/help/installation/">here</a> if you want to install manually. It is recommended that you extract Pale Moon to a user-writable location so that the internal updater can work as intended to keep your browser up to date.</p>
 
     <p><a href="/datastore/release/{$PAGE_DATA.linux64_release.file}">Download x64 <strong>tar.bz2</strong> (direct download)</a><br />
     Size: {$PAGE_DATA.linux64_release.displaySize}<br />
@@ -49,12 +38,16 @@
     PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux32_release.file}.sig">[Sig]</a>
 {/if}
     </p>
-
-    <p>For more information, please read the <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">release notes</a>.</p>
 {else}
     <h3>Mainstream Binaries are currently unavailable. Please try again later.</h3>
     <p><small>Error: i686/x86-64 version mismatch</small>
 {/if}
+
+    <h3>Other downloads</h3>
+
+    <p>Unstable versions: <a href="/download/unstable/" target="_blank">here</a>.<br />
+    Source code: see the source code page <a href="//www.palemoon.org/sourcecode.shtml" target="_blank">here</a>.<br />
+    Older versions: <a href="//www.palemoon.org/archived.shtml" target="_blank">here</a>.</p>
 {elseif $PAGE_TYPE == 'unstable'}
     <h1>Download Pale Moon for Linux unstable binaries</h1>
     <p><strong>This version of Pale Moon is built somewhat regularly from the current development source of the browser and should only be considered for use by people who wish to help catch bugs before release.</strong></p>
