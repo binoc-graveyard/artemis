@@ -3,17 +3,13 @@
 <h3>General</h3>
 
 <ul>
+    <li><a href="#pmnotwork">Pale Moon does not work on my computer!</a></li>
     <li><a href="#updater">The internal updater is not working!</a></li>
     <li><a href="#privateflag">The -private flag does not work in Pale Moon.</a></li>
     <li><a href="#html5vid">HTML5 videos do not work!</a></li>
 </ul>
 
 <h3>Installation</h3>
-
-<ul>
-    <li><a href="#pmnotwork">Pale Moon does not work on my computer!</a></li>
-    <li><a href="#install4self">Can I install Pale Moon for myself only?</a></li>
-</ul>
 
 <h3>Profiles, plugins, extensions...</h3>
 
@@ -42,6 +38,10 @@
 <hr/>
 <h2>General</h2>
 
+<p><strong id="pmnotwork">Pale Moon does not work on my computer!</strong></p>
+
+<p>If Pale Moon refuses to work try starting it from the terminal and see what error messages are displayed. If you are not able to resolve the message that is provided, it is recommended you post the problem and error message(s) on the <a href="https://forum.palemoon.org/viewforum.php?f=37">forum</a>.
+
 <p><strong id="updater">The internal updater is not working!</strong></p>
 
 <p>Pale Moon ships with its own internal updater. However, in order for the updater to work properly Pale Moon must be extracted to a user-writable location. If the updater is reporting an update available but is not updating, please ensure that the "palemoon" directory is writable by your user account.</p>
@@ -53,16 +53,6 @@
 <p><strong id="html5vid">HTML5 videos do not work!</strong></p>
 
 <p>Pale Moon requires FFmpeg (specifically the libavcodec component) to play HD H.264 videos. If you're having trouble getting HD HTML5 videos to play, please ensure that you have the libavcodec package installed on your system. Note that on some distros, you will need to install libavcodec from a "non-free" repo.</p>
-
-<h2>Installation</h2>
-
-<p><strong id="pmnotwork">Pale Moon does not work on my computer!</strong></p>
-
-<p>If Pale Moon refuses to work try starting it from the terminal and see what error messages are displayed. If you are not able to resolve the message that is provided, it is recommended you post the problem and error message(s) on the <a href="https://forum.palemoon.org/viewforum.php?f=37">forum</a>.
-
-<p><strong id="install4self">Can I install Pale Moon for myself only?</strong></p>
-
-<p>Yes it is possible to do so. Follow the manual installation method in the <a href="installation">installation instructions</a>, but extract the archive to somewhere in your home directory (instead of /opt), and make the menu entry in ~/.local/share/applications. Adjust the additional locations mentioned in the installation instructions accordingly.</p>
 
 <h2>Profiles, plugins, extensions...</h2>
 

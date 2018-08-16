@@ -137,6 +137,9 @@ if (startsWith($strRequestPath, '/download/')) {
     elseif ($strRequestPath == '/download/unstable/') {
         funcGeneratePage(funcGenDownloadContent('unstable'));
     }
+    else {
+        funcRedirect('/download/mainline/');
+    }
 }
 else {
     if (array_key_exists($strRequestPath, $arrayStaticPages)) {

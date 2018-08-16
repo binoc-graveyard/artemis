@@ -4,7 +4,7 @@
 
 <h2>Manual method</h2>
 
-<p>These instructions below will extract Pale Moon to your home folder. You can extract Pale Moon to any other location by substituting you home folder with the path for the directory you want to extarct to. Please note that it is <strong>required that you extract to a user writable location in order for the internal updater to work</strong>! If you want to perform a "local install" of Pale Moon, see the <a href="/help/faq/">FAQ</a>.</p>
+<p>These instructions below will extract Pale Moon to your home folder. You can extract Pale Moon to any other location by substituting you home folder with the path for the directory you want to extarct to. Please note that it is <strong>required that you extract to a user writable location in order for the internal updater to work</strong>!</p>
 
 <h3>Installation</h3>
 
@@ -65,7 +65,7 @@ Categories=Network;WebBrowser;Internet
 MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;video/webm;application/x-xpinstall;
 StartupNotify=true</code></pre>
 
-<p> After creating the menu entry, you may need to ru the following command to get the icon to appear:</p>
+<p> After creating the menu entry, you may need to run the following command to get the icon to appear:</p>
 
 <pre><code>gtk-update-icon-cache -f /usr/share/icons/hicolor</code></pre>
 
