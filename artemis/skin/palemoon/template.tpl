@@ -25,10 +25,7 @@
         <script src="{$BASE_PATH}abfunctions.js" type="text/javascript"></script>
  {/if}
         <div id="PM-Wrapper">
-            <div id="PM-Header" class="PM-Wrapper-Width">
-                <img src="{$BASE_PATH}logo.png" class="alignleft" />
-                <img src="{$BASE_PATH}wordmark-palemoon.png" class="alignright" />
-            </div>
+            <div id="PM-Header" class="PM-Wrapper-Width"></div>
             <div id="PM-Menubar" class="mainmenu">
             <span class="alignleft">
                 <ul>

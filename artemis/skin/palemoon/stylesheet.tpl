@@ -17,10 +17,7 @@
 }
 
 html {
-
-    min-height: 100%;
-    margin-left: 8px;
-    margin-right: 8px;
+  min-height: 100%;
 }
 
 body {
@@ -28,12 +25,14 @@ body {
 	margin-top: 8px;
 	margin-right: 0px;
 	margin-bottom: 46px;
-    font-family: "Museo500Regular","Times New Roman",Times,serif;
-    font-style: normal;
-    font-size: 12pt;
-    letter-spacing: 0.3px;
-    background-color: #d4d9f7;
-    background: linear-gradient(to bottom, #d4d9f7 0%, #abafea 31%, #999ee8 100%);
+  font-family: "Museo500Regular","Times New Roman",Times,serif;
+  font-style: normal;
+  font-size: 12pt;
+  letter-spacing: 0.3px;
+  background-color: #7A98B5;
+  background-image: linear-gradient(to bottom, #7598B9 0%, #A3B5CB 70%, #AFAABD 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body,td,th {
@@ -43,6 +42,15 @@ body,td,th {
   color: #000000;
   letter-spacing: 0.3px;
 }
+
+a, a:visited, a:active  {
+  color: rgb(22, 54, 101);
+}
+
+a:hover {
+  color: rgb(192, 19, 20);
+}
+
 /*
 @media all and (min-width: 820px)  {
 #PM-Wrapper {
@@ -57,39 +65,36 @@ body,td,th {
 }
 */
 #PM-Wrapper {
-    min-width: 760px;
-    max-width: 1200px;
-  	margin: 0 auto;
-	border: 1px solid;
-	border-color: #888888;
-	text-align: left;
-	box-shadow: 2px 2px 8px #333;
-	border-radius: 9px;
-	padding-left: 3px;
-	padding-right: 3px;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	background-color: rgb(249, 249, 249);
+  margin: 0 auto;
+  border: 1px solid;
+  border-color: #888888;
+  text-align: left;
+  min-width: 1192px;
+  max-width: 1192px;
+  box-shadow: 2px 2px 8px #333;
+  border-radius: 9px;
+  padding: 3px;
+  background-color: rgba(249, 249, 249, 1);
+  color: black;
 }
 
 #PM-Header {
-    width: 100%;
-    height: 82px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    overflow: hidden;
-    background: #dee6e8; /* Old browsers */
-    background: radial-gradient(ellipse at 50% 100%, rgba(236,242,240,1) 0%,rgba(236,242,240,0.5) 50%,rgba(255,255,255,0) 100%), radial-gradient(circle at 50% 85%, #dee6e8 0%,#c6ced1 80%,#b8cacc 100%);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  overflow: hidden;
+  width: 100%;
+  height: 148px;
+  background: #dee6e8; /* Old browsers */
+  background: url('{$BASE_PATH}wordmark-palemoon.png') no-repeat center right,
+              url('{$BASE_PATH}sub-banner2.jpg') no-repeat top left;
 }
 
 #PM-Menubar {
-    padding: 0pt;
-    vertical-align: top;
-    background-color: rgb(82, 114, 161);
-    width: 100%;
-    height: 29px;
-    border: solid #A0A0A4;
-    border-width: 1px 0;
+  padding: 0pt;
+  vertical-align: top;
+  background-color: rgb(82, 114, 161);
+  width: 100%;
+  height: 29px;
 }
 
 #PM-Content {
@@ -161,7 +166,7 @@ h1 {
   font-family: "Museo300Regular","Times New Roman",Times,serif;
   font-size: 20.5pt;
   color: #000066;
-  letter-spacing: 0.3px;
+  margin: 0.5em auto;
 }
 
 h2.faq {
@@ -238,82 +243,75 @@ display: none;
 }
 
 /* pull-down mainmenu css */
-.mainmenu {
-position:relative;
-z-index:998;
+.mainmenu{
 	float: left;
 	width: 100%;
 	padding: 0;
+	position: relative;
+	z-index: 500;
+	border: none;
 }
+
 .mainmenu ul {
-	float: left;
 	width: 100%;
 	list-style: none;
 	line-height: 1;
 	color:#FFFFFF;
 	background: #5272A1;
 	padding: 0;
-	border: solid #A0A0A4;
-	border-width: 1px 0;
 	margin: 0 0 0 0;
-	margin-top: -1px;
-   filter:alpha(opacity=97);
-   -moz-opacity:0.98;
-   -khtml-opacity: 0.98;
-   opacity: 0.98;
+  filter:alpha(opacity=97);
+  -khtml-opacity: 0.98;
+  opacity: 0.98;
 }
 
 .mainmenu a, .mainmenu a:visited {
-	display: block;
-   font-family: "Museo500Regular","Times New Roman",Times, serif;
-   font-size:11.5pt;
-   font-weight:500;
-   font-style:normal;
-   text-decoration:none;
-	color: #FFFFFF;
-	text-decoration: none;
-	padding: 7px 16px;
-	letter-spacing: 0.4px;
-	opacity: 0.99;
-
+  display: block;
+  font-family: "Museo500Regular","Times New Roman",Times, serif;
+  font-size:11.5pt;
+  font-style:normal;
+  text-decoration:none;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 7px 1em;
+  letter-spacing: 0.4px;
+  opacity: 0.99;
 }
-.mainmenu ul ul a {
+.mainmenu ul ul a{
 	width:100%;
 	height:100%;
 }
-.mainmenu ul a {
+.mainmenu ul a{
 	width:1%;
 }
 
-
-.mainmenu li {
+.mainmenu li  {
 	float: left;
 	margin:0;
 	padding: 0;
-	/* width: 8em; */
 }
 
 .mainmenu ul li { float:left; position:relative; }
 .mainmenu ul li a { white-space:nowrap; }
-
+	
 .mainmenu li ul {
-	position: absolute;
-	left: -999em;
-	height: auto;
-	width:15em;
+  position: absolute;
+  left: -999em;
+  height: auto;
+  width:15em;	
 
-	background: #5272A1;
-	font-weight: normal;
-	border-width: 1px;
-	margin: 0;
+  background: #5272A1;
+  font-weight: normal;
+  border: 1px solid rgba(240,240,255,.5);
+  margin: 0;
 }
 
 .mainmenu li li {
-	width:15em ;
+	width:15em;
 }
 
 .mainmenu li li a{
-	width:13em ;
+	width:13em;
 }
 
 .mainmenu li ul  {
@@ -322,7 +320,7 @@ z-index:998;
 .mainmenu li ul ul {
 	margin: -1.5em 0 0 13.0em;
 }
-.ul_ch,
+.ul_ch, 
 .mainmenu li:hover ul ul,
 .mainmenu li li:hover ul ul,
 .mainmenu li li li:hover ul ul,
@@ -339,7 +337,7 @@ z-index:998;
 {
 	left: auto;
 }
-.mainmenu li:hover>ul.ul_ch
+.mainmenu li:hover>ul.ul_ch   
 {
 	left: auto;
 }
@@ -351,23 +349,23 @@ z-index:998;
 .mainmenu li:hover a,.mainmenu li:hover a:visited,.mainmenu li:hover a:hover,.mainmenu li a:hover {
 	color:#FFFBF0;
 }
-.mainmenu li:hover li a, .mainmenu li li:hover li a,
+.mainmenu li:hover li a, .mainmenu li li:hover li a, 
 .mainmenu li li li:hover li a, .mainmenu li li li li:hover li a,
-.mainmenu li:hover li a:visited, .mainmenu li li:hover li a:visited,
+.mainmenu li:hover li a:visited, .mainmenu li li:hover li a:visited, 
 .mainmenu li li li:hover li a:visited, .mainmenu li li li li:hover li a:visited
 {
 	color:#FFFFFF;
 }
-.mainmenu li li:hover, .mainmenu li li li:hover,
-.mainmenu li li li li:hover , .mainmenu li li li li li:hover , .mainmenu li li li li li li:hover
+.mainmenu li li:hover, .mainmenu li li li:hover, 
+.mainmenu li li li li:hover , .mainmenu li li li li li:hover , .mainmenu li li li li li li:hover 
 {
 	background: #004B97;
 
 }
-.mainmenu li li:hover a,.mainmenu li li li:hover a,
+.mainmenu li li:hover a,.mainmenu li li li:hover a, 
 .mainmenu li li li li:hover a, .mainmenu li li li li li:hover a
 {
-	color: #FFFBF0;
+	color: #FFFBF0; 
 }
 
 .mainmenu ul ul a, .mainmenu ul ul a:visited,
@@ -389,6 +387,7 @@ z-index:998;
 .mainmenu li:hover li:hover li:hover li:hover li:hover li a,.mainmenu li:hover li:hover li:hover li:hover li:hover li a:visited {
 	color: #FFFFFF;
 }
+
 /* end of mainmenu css - change*/
 
 {if $SITE_AB == true}
