@@ -18,7 +18,6 @@ For support, check out the forum <a href="https://forum.palemoon.org" target="_b
 <ul>
         <li><a href="https://software.opensuse.org/download.html?project=home:stevenpusser&package=palemoon" target="_blank">Pale Moon repositories for Debian and Ubuntu</a> -- maintained by Steve Pusser</li>
         <li><a href="http://repo.khronosschoty.org/Slackware/Pale-Moon/" target="_blank">Pale Moon SlackBuild packages</a> -- maintained by khronosschoty</li>
-        <li><a href="http://www.kovacsoltvideo.hu/moonchildproductions" target="_blank">Pale Moon repacks for Ubuntu and Debian</a> -- maintained by László Kovács</li>
         <li><a href="https://copr.fedorainfracloud.org/coprs/bgstack15/palemoon/" target="_blank">Pale Moon COPR repository for Fedora and CentOS</a> -- maintained by bgstack15</li>
 </ul>
 
