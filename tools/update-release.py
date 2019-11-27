@@ -106,7 +106,7 @@ if not strPathDatastore.endswith('/'):
     funcOutputMessage('statusGen', 'Adding trailing slash to ' + sys.argv[1])
 
 for _value in listFilesRaw:
-    if _value.endswith('.tar.bz2'):
+    if _value.endswith('.tar.bz2') or _value.endswith('.tar.xz'):
         listTarballs += [ _value ]
 
 for _value in listTarballs:

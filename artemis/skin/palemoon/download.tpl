@@ -23,7 +23,7 @@
 
     <p>Be sure to download the correct archive that matches the architecture of your OS. To use, simply extract the tarball anywhere you like and execute the "palemoon" file inside it, or follow the instructions <a href="/help/installation/">here</a> if you want to install manually. It is recommended that you extract Pale Moon to a user-writable location so that the internal updater can work as intended to keep your browser up to date.</p>
 
-    <p><a href="/datastore/release/{$PAGE_DATA.linux64_release.file}">Download x64 <strong>tar.bz2</strong> (direct download)</a><br />
+    <p><a href="/datastore/release/{$PAGE_DATA.linux64_release.file}">Download x64 <strong>tarball</strong> (direct download)</a><br />
     Size: {$PAGE_DATA.linux64_release.displaySize}<br />
     SHA-256 checksum: {$PAGE_DATA.linux64_release.hash}<br />
 {if $PAGE_DATA.linux64_release.sig == true}
@@ -31,7 +31,7 @@
 {/if}
     </p>
 
-    <p><a href="/datastore/release/{$PAGE_DATA.linux32_release.file}">Download x86 <strong>tar.bz2</strong> (direct download)</a><br />
+    <p><a href="/datastore/release/{$PAGE_DATA.linux32_release.file}">Download x86 <strong>tarball</strong> (direct download)</a><br />
     Size: {$PAGE_DATA.linux32_release.displaySize}<br />
     SHA-256 checksum: {$PAGE_DATA.linux32_release.hash}<br />
 {if $PAGE_DATA.linux32_release.sig == true}
@@ -89,7 +89,7 @@
 
     <p>The unstable version for Linux is only available in 64-bit. There are no 32-bit builds of the unstable version available.</p>
 
-    <p><a href="/datastore/release/{$PAGE_DATA.linux64_unstable.file}">Download x64 <strong>tar.bz2</strong> (direct download)</a><br />
+    <p><a href="/datastore/release/{$PAGE_DATA.linux64_unstable.file}">Download x64 <strong>tarball</strong> (direct download)</a><br />
     Size: {$PAGE_DATA.linux64_unstable.displaySize}<br />
     SHA-256 checksum: {$PAGE_DATA.linux64_unstable.hash}<br />
 {if $PAGE_DATA.linux64_unstable.sig == true}
