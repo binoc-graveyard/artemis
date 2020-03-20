@@ -390,25 +390,4 @@ display: none;
 
 /* end of mainmenu css - change*/
 
-{if $SITE_AB == true}
-#OKjbdp99tsfsf {
-    display: none;
-    margin-bottom: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 10px 5px;
-    background: #800000;
-    text-align: center;
-    color: #ffffff;
-    border-radius: 5px;
-}
-
-#OKjbdp99tsfsf > a {
-    color: #ffffd0;
-}
-
-#abclosebutton {
-    float:left;
-}
-{/if}
 

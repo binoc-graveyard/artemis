@@ -13,17 +13,6 @@
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body>
-{if $SITE_AB == true}
-        <div id="OKjbdp99tsfsf">
-            <a id="abclosebutton" href="#" onclick="abdismiss();">X</a>
-            We love ad blockers as much as you, but we depend on ad revenue to fund various sites and services.<br />
-            We use responsible ad services to keep your visit to our websites a safe and uninterrupted one.<br />
-            To ensure our continued operation, please disable your ad blocker for this site or <a href="//www.palemoon.org/donations.shtml">support us another way</a>.<br />
-        </div>
-
-        <script src="{$BASE_PATH}ads.js?id=somead" type="text/javascript"></script>
-        <script src="{$BASE_PATH}abfunctions.js" type="text/javascript"></script>
- {/if}
         <div id="PM-Wrapper">
             <div id="PM-Header" class="PM-Wrapper-Width"></div>
             <div id="PM-Menubar" class="mainmenu">
@@ -83,18 +72,6 @@
                 <div id="PM-Content-Body">
                     {%PAGE_CONTENT}
                 </div>
-            </div>
-            <div style="text-align: center; margin-top: 8px;">
-                <span class="ad-1" style="color: rgb(102, 102, 102);"><small>- Advertisement -</small></span><br />
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- Linux leaderboard -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:728px;height:90px"
-                     data-ad-client="ca-pub-4490583218014683"
-                     data-ad-slot="9772829652"></ins>
-                <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
             </div>
             <div style="margin-top: 10px; text-align: center; line-height: 13px; font-size: 10px;">
                 <p><span style="color: rgb(102, 102, 102);">
