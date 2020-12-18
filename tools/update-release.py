@@ -122,10 +122,12 @@ for _value in listTarballs:
 
     if ('palemoon' in _value) and not 'unstable' in _value:
         if 'palemoon' in _value:
-            if 'x86_64' in _value:
-                _arch = 'linux64_release'
-            else:
+            if 'i686' in _value:
                 _arch = 'linux32_release'
+            elif 'x86_64-gtk3' in _value:
+                _arch = 'linux64-gtk3_release'
+            else:
+                _arch = 'linux64_release'
 
             dictManifest[_arch] = {
                 'file' : _value,

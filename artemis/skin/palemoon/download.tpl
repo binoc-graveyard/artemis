@@ -1,6 +1,6 @@
 {if $PAGE_TYPE == 'mainline'}
     <h1>Download Pale Moon for Linux</h1>
-    {if $PAGE_DATA.linux64_release.version == $PAGE_DATA.linux32_release.version}
+    {if $PAGE_DATA.linux64_release}
     <h3>Latest release: {$PAGE_DATA.linux64_release.version}</h3>
 
     <p><strong>New this release:</strong> Details about this update can be found in the <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">Release notes.</a></p>
@@ -30,17 +30,8 @@
     PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux64_release.file}.sig">[Sig]</a></p>
 {/if}
     </p>
-
-    <p><a href="/datastore/release/{$PAGE_DATA.linux32_release.file}">Download x86 <strong>tarball</strong> (direct download)</a><br />
-    Size: {$PAGE_DATA.linux32_release.displaySize}<br />
-    SHA-256 checksum: {$PAGE_DATA.linux32_release.hash}<br />
-{if $PAGE_DATA.linux32_release.sig == true}
-    PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux32_release.file}.sig">[Sig]</a>
-{/if}
-    </p>
 {else}
     <h3>Mainstream Binaries are currently unavailable. Please try again later.</h3>
-    <p><small>Error: i686/x86-64 version mismatch</small>
 {/if}
 
     <h3>Other downloads</h3>
