@@ -39,6 +39,8 @@
     <p>Unstable versions: <a href="/download/unstable/" target="_blank">here</a>.<br />
     Source code: see the source code page <a href="//www.palemoon.org/sourcecode.shtml" target="_blank">here</a>.<br />
     Older versions: <a href="//www.palemoon.org/archived.shtml" target="_blank">here</a>.</p>
+
+    <p><strong>NOTE:</strong> Linux 32 bit binaries have been discontined. However, your distribution may still offer 32 bit for your chosen distribution. Otherwise, to continue using the "generic" Pale Moon binaries we distribute, please update to a 64 bit distribution.</p>
 {elseif $PAGE_TYPE == 'unstable'}
     <h1>Download Pale Moon for Linux unstable binaries</h1>
     <p><strong>This version of Pale Moon is built somewhat regularly from the current development source of the browser and should only be considered for use by people who wish to help catch bugs before release.</strong></p>
