@@ -46,7 +46,7 @@
 {/if}
     </p>
 {else}
-    <p><em>The GTK3 Tarball is not currently unavailable. Please try again later.</em></p>
+    <p><em>The GTK2 Tarball is not currently unavailable. Please try again later.</em></p>
 {/if}
 
     <h3>Other downloads</h3>
