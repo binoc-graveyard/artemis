@@ -1,6 +1,6 @@
 {if $PAGE_TYPE == 'mainline'}
     <h1>Download Pale Moon for Linux</h1>
-    {if $PAGE_DATA.linux64_release}
+
     <h3>Latest release: {$PAGE_DATA.linux64_release.version}</h3>
 
     <p><strong>New this release:</strong> Details about this update can be found in the <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">Release notes.</a></p>
@@ -13,7 +13,7 @@
         <li>A modern Linux distribution. The browser may not work well on old or LTS releases of Linux.</li>
         <li>A modern processor (must have SSE2 support as the absolute minimum).</li>
         <li>1GB of RAM (2GB or more recommended for heavy use).</li>
-        <li>GTK+ v2.24</li>
+        <li>GTK 2.24 or GTK 3.22+ (Not GTK 4)</li>
         <li>GLib 2.22 or higher</li>
         <li>Pango 1.14 or higher</li>
         <li>libstdc++ 4.6.1 or higher</li>
@@ -23,13 +23,33 @@
 
     <p>Be sure to download the correct archive that matches the architecture of your OS. To use, simply extract the tarball anywhere you like and execute the "palemoon" file inside it, or follow the instructions <a href="/help/installation/">here</a> if you want to install manually. It is recommended that you extract Pale Moon to a user-writable location so that the internal updater can work as intended to keep your browser up to date.</p>
 
-    <p><a href="/datastore/release/{$PAGE_DATA.linux64_release.file}">Download x64 <strong>tarball</strong> (direct download)</a><br />
+{if linux64-gtk3_release}
+    <p><a href="/datastore/release/{$PAGE_DATA.linux64-gtk3_release.file}">Download x64 - GTK3<strong>tarball</strong> (direct download)</a><br />
+    Version: {$PAGE_DATA.linux64-gtk3_release.version}<br />
+    Size: {$PAGE_DATA.linux64-gtk3_release.displaySize}<br />
+    SHA-256 checksum: {$PAGE_DATA.linux64-gtk3_release.hash}<br />
+{if $PAGE_DATA.linux64-gtk3_release.sig == true}
+    PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux64-gtk3_release.file}.sig">[Sig]</a></p>
+{/if}
+    </p>
+{else}
+    <p><em>The GTK3 Tarball is not currently unavailable. Please try again later.</em></p>
+{/if}
+
+{if $PAGE_DATA.linux64_release}
+    <p><a href="/datastore/release/{$PAGE_DATA.linux64_release.file}">Download x64 - GTK2<strong>tarball</strong> (direct download)</a><br />
+    Version: {$PAGE_DATA.linux64_release.version}<br />
     Size: {$PAGE_DATA.linux64_release.displaySize}<br />
     SHA-256 checksum: {$PAGE_DATA.linux64_release.hash}<br />
 {if $PAGE_DATA.linux64_release.sig == true}
     PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux64_release.file}.sig">[Sig]</a></p>
 {/if}
     </p>
+{else}
+    <p><em>The GTK3 Tarball is not currently unavailable. Please try again later.</em></p>
+{/if}
+
+
 {else}
     <h3>Mainstream Binaries are currently unavailable. Please try again later.</h3>
 {/if}
