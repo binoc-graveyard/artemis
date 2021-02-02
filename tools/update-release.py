@@ -125,7 +125,7 @@ for _value in listTarballs:
             if 'i686' in _value:
                 _arch = 'linux32_release'
             elif 'x86_64-gtk3' in _value:
-                _arch = 'linux64-gtk3_release'
+                _arch = 'linux64_gtk3_release'
             else:
                 _arch = 'linux64_release'
 

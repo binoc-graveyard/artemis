@@ -23,13 +23,13 @@
 
     <p>Be sure to download the correct archive that matches the architecture of your OS. To use, simply extract the tarball anywhere you like and execute the "palemoon" file inside it, or follow the instructions <a href="/help/installation/">here</a> if you want to install manually. It is recommended that you extract Pale Moon to a user-writable location so that the internal updater can work as intended to keep your browser up to date.</p>
 
-{if $PAGE_DATA.linux64-gtk3_release}
-    <p><a href="/datastore/release/{$PAGE_DATA.linux64-gtk3_release.file}">Download x64 - GTK3<strong>tarball</strong> (direct download)</a><br />
-    Version: {$PAGE_DATA.linux64-gtk3_release.version}<br />
-    Size: {$PAGE_DATA.linux64-gtk3_release.displaySize}<br />
-    SHA-256 checksum: {$PAGE_DATA.linux64-gtk3_release.hash}<br />
-{if $PAGE_DATA.linux64-gtk3_release.sig == true}
-    PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux64-gtk3_release.file}.sig">[Sig]</a></p>
+{if $PAGE_DATA.linux64_gtk3_release}
+    <p><a href="/datastore/release/{$PAGE_DATA.linux64_gtk3_release.file}">Download x64 - GTK3<strong>tarball</strong> (direct download)</a><br />
+    Version: {$PAGE_DATA.linux64_gtk3_release.version}<br />
+    Size: {$PAGE_DATA.linux64_gtk3_release.displaySize}<br />
+    SHA-256 checksum: {$PAGE_DATA.linux64_gtk3_release.hash}<br />
+{if $PAGE_DATA.linux64_gtk3_release.sig == true}
+    PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux64_gtk3_release.file}.sig">[Sig]</a></p>
 {/if}
     </p>
 {else}
