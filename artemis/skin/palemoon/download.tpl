@@ -49,11 +49,6 @@
     <p><em>The GTK3 Tarball is not currently unavailable. Please try again later.</em></p>
 {/if}
 
-
-{else}
-    <h3>Mainstream Binaries are currently unavailable. Please try again later.</h3>
-{/if}
-
     <h3>Other downloads</h3>
 
     <p>Unstable versions: <a href="/download/unstable/" target="_blank">here</a>.<br />
