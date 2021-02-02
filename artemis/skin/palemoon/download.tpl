@@ -1,9 +1,7 @@
 {if $PAGE_TYPE == 'mainline'}
     <h1>Download Pale Moon for Linux</h1>
 
-    <h3>Latest release: {$PAGE_DATA.linux64_release.version}</h3>
-
-    <p><strong>New this release:</strong> Details about this update can be found in the <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">Release notes.</a></p>
+    <p>Check out the <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">Release notes.</a></p>
 
     <h3>System requirements</h3>
 
