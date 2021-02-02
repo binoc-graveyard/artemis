@@ -1,7 +1,7 @@
 {if $PAGE_TYPE == 'mainline'}
     <h1>Download Pale Moon for Linux</h1>
 
-    <p>Check out the <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">Release notes.</a></p>
+    <p>Be sure to check out the latest <a href="//www.palemoon.org/releasenotes.shtml" target="_blank">Release notes.</a></p>
 
     <h3>System requirements</h3>
 
