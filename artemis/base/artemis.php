@@ -144,9 +144,7 @@ function funcFormatSize( $bytes )
 
 // == | Main | ================================================================
 
-if ($_SERVER['SERVER_NAME'] == $strArtemisDevURL) {
-    $boolDebugMode = true;
-    $strArtemisURL = $strArtemisDevURL;
+if ($boolDebugMode) {
     if (file_exists('./.git/HEAD')) {
         $_strGitHead = file_get_contents('./.git/HEAD');
         $_strGitSHA1 = file_get_contents('./.git/' . substr($_strGitHead, 5, -1));
