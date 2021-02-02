@@ -11,7 +11,7 @@ $strArtemisURL = $strArtemisLiveURL;
 $strArtemisSiteName = 'Pale Moon for Linux';
 $strArtemisVersion = '1.5.0';
 $strArtemisDatastore = './datastore/';
-$boolDebugMode = false;
+$boolDebugMode = funcHTTPGetValue('debugMode');
 
 $strRequestComponent = funcHTTPGetValue('component');
 $arrayArgsComponent = preg_grep('/^component=(.*)/', explode('&', parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY)));
