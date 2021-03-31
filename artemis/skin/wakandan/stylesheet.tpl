@@ -16,7 +16,7 @@ body {
 	margin-top: 8px;
 	margin-right: 0px;
 	margin-bottom: 46px;
-  font-family: "ModernWakandanRegular";
+  font-family: "ModernWakandan";
   font-style: normal;
   font-size: 12pt;
   letter-spacing: 0.3px;
@@ -27,7 +27,7 @@ body {
 }
 
 body,td,th {
-  font-family: "ModernWakandanRegular";
+  font-family: "ModernWakandan";
   font-style: normal;
   font-size: 12pt;
   color: #000000;
@@ -91,7 +91,7 @@ a:hover {
 #PM-Content {
     width: 100%;
     display: table;
-    font-family: "ModernWakandanRegular";
+    font-family: "ModernWakandan";
     font-style: normal;
     font-size: 12pt;
     letter-spacing: 0.3px;
@@ -154,7 +154,7 @@ background: linear-gradient(to right, rgba(240,240,240,1) 50%,rgba(255,255,255,0
 }
 
 h1 {
-  font-family: "ModernWakandanRegular";
+  font-family: "ModernWakandan";
   font-size: 20.5pt;
   color: #000066;
   margin: 0.5em auto;
@@ -166,7 +166,7 @@ h2.faq {
 
 blockquote {
   background-color: #ffffcc;
-  font-family: "ModernWakandanRegular";
+  font-family: "ModernWakandan";
   -moz-box-shadow: 1px 1px 2px #000;
   box-shadow: 1px 1px 2px #000;
   margin: 16px;
@@ -174,7 +174,7 @@ blockquote {
 }
 
 pre {
-  font-family: "ModernWakandanRegular";
+  font-family: "ModernWakandan";
   font-size: 14px;
   background-color: #f5f5f5;
   overflow-wrap: normal;
@@ -182,7 +182,7 @@ pre {
   }
 
 code {
-  font-family: "ModernWakandanRegular";
+  font-family: "ModernWakandan";
   font-size: 14px;
   display: block;
   padding: 10px;
@@ -217,7 +217,7 @@ display: none;
   border: 1px solid rgb(0, 153, 0);
   padding: 14px;
   background-color: rgb(153, 255, 153);
-  font-family: "ModernWakandanRegular";
+  font-family: "ModernWakandan";
   color: black;
   text-decoration: none;
   border-radius: 9px;
@@ -227,7 +227,7 @@ display: none;
   border: 1px solid rgb(0, 0, 153);
   padding: 14px;
   background-color: rgb(153, 153, 255);
-  font-family: "ModernWakandanRegular";
+  font-family: "ModernWakandan";
   color: black;
   text-decoration: none;
   border-radius: 9px;
@@ -258,7 +258,7 @@ display: none;
 
 .mainmenu a, .mainmenu a:visited {
   display: block;
-  font-family: "ModernWakandanRegular";
+  font-family: "ModernWakandan";
   font-size:11.5pt;
   font-style:normal;
   text-decoration:none;
