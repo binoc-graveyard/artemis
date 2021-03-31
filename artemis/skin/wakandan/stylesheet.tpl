@@ -174,7 +174,7 @@ blockquote {
 }
 
 pre {
-  font-family: "Courier New",Courier,monospace;
+  font-family: "ModernWakandanRegular";
   font-size: 14px;
   background-color: #f5f5f5;
   overflow-wrap: normal;
@@ -182,7 +182,7 @@ pre {
   }
 
 code {
-  font-family: "Courier New",Courier,monospace;
+  font-family: "ModernWakandanRegular";
   font-size: 14px;
   display: block;
   padding: 10px;
