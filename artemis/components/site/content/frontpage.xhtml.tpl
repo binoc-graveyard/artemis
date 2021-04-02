@@ -11,7 +11,7 @@ For support, check out the forum <a href="https://forum.palemoon.org" target="_b
 
 <h3>Installation:</h3>
 
-<p>It is <strong>not</strong> necessary to install Pale Moon to use it. Pale Moon for Linux is distributed as a <a href="/download/mainline/">bzipped tarball</a> that can be extracted and run from any location on your system. If however you prefer to "install" it on your system, you can find instructions to do so <a href="/help/installation/">here</a>.</p>
+<p>It is <strong>not</strong> necessary to install Pale Moon to use it. Pale Moon for Linux is distributed as a <a href="/download/mainline/">xz-zipped tarball</a> that can be extracted and run from any location on your system. If however you prefer to "install" it on your system, you can find instructions to do so <a href="/help/installation/">here</a>.</p>
 
 <p>Additionally, you can install one of these fully-endorsed third-party builds of Pale Moon for Linux:</p>
 

@@ -22,7 +22,7 @@
                         <a href="#" target="_self">Main</a>
                         <ul class="ul_ch">
                             <li class="li_nc"><a href="http://www.palemoon.org/" target="_self">Pale Moon homepage</a></li>
-                            <li class="li_nc"><a href="http://start.palemoon.org/" target="_self">Pale Moon Start page</a></li>
+                            <li class="li_nc"><a href="https://start.palemoon.org/" target="_self">Pale Moon Start page</a></li>
                             <li class="li_nc"><a href="/" target="_self">Pale Moon for Linux site</a></li>
                         </ul>
                     </li>
