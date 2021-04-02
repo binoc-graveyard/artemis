@@ -6,7 +6,7 @@
 // == | Vars | ================================================================
 
 $strContentBasePath = './artemis/components/site/content/';
-$strSkinBasePath = './artemis/skin/wakandan/';
+$strSkinBasePath = './artemis/skin/palemoon/';
 
 $arraySmartyPaths = array(
     'cache' => $strApplicationPath . '.smarty/cache',
