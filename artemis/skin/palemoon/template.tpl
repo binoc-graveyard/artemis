@@ -23,9 +23,11 @@
             <ul class="ul_ch">
               <li class="li_nc"><a href="http://www.palemoon.org/" target="_self">Pale Moon Homepage</a></li>
               <li class="li_nc"><a href="/" target="_self"><strong><em>Pale Moon Linux Site</a></em></strong></li>
+              <li class="li_nc"><a href="https://palemoon.start.me" target="_self">Pale Moon Start Page</a></li>
               <li class="li_nc"><a href="https://addons.palemoon.org/" target="_self">Pale Moon Add-ons Site</a></li>
               <li class="li_nc"><a href="http://developer.palemoon.org/" target="_self">Pale Moon Developer Site</a></li>
               <li class="li_nc"><a href="https://forum.palemoon.org/" target="_self">Pale Moon Forum</a></li>
+              <li class="li_nc"><a href="http://www.basilisk-browser.org/" target="_self">Basilisk Homepage</a></li>
             </ul>
           </li>
           <li class="li_nc">

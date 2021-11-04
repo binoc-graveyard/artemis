@@ -19,7 +19,7 @@
 
     <h3>Download links</h3>
 
-    <p>Be sure to download the correct archive that matches the architecture of your OS. To use, simply extract the tarball anywhere you like and execute the "palemoon" file inside it, or follow the instructions <a href="/help/installation/">here</a> if you want to install manually. It is recommended that you extract Pale Moon to a user-writable location so that the internal updater can work as intended to keep your browser up to date.</p>
+    <p>Simply extract the tarball anywhere you like and execute the "palemoon" file inside it, or follow the instructions <a href="/help/installation/">here</a> if you want to install manually. It is recommended that you extract Pale Moon to a user-writable location so that the internal updater can work as intended to keep your browser up to date.</p>
 
 {if $PAGE_DATA.linux64_gtk3_release}
     <p><a href="/datastore/release/{$PAGE_DATA.linux64_gtk3_release.file}"><strong>Download x64 - GTK3 tarball</strong> (direct download)</a><br />
