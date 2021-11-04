@@ -49,59 +49,15 @@
 
     <h3>Other downloads</h3>
 
-    <p>Unstable versions: <a href="/download/unstable/" target="_blank">here</a>.<br />
     Source code: see the source code page <a href="//www.palemoon.org/sourcecode.shtml" target="_blank">here</a>.<br />
     Older versions: <a href="//www.palemoon.org/archived.shtml" target="_blank">here</a>.</p>
 
     <p><strong>NOTE:</strong> Linux 32 bit binaries have been discontinued. However, your distribution (or one of the fantastic package contributors) may still offer 32 bit packages at their discretion. If they do you should remove the "generic" binary and install said package. Otherwise, to continue using the Pale Moon binaries we distribute, please update to a 64 bit distribution.</p>
 {elseif $PAGE_TYPE == 'unstable'}
     <h1>Download Pale Moon for Linux unstable binaries</h1>
-    <p><strong>This version of Pale Moon is built somewhat regularly from the current development source of the browser and should only be considered for use by people who wish to help catch bugs before release.</strong></p>
-
     <p>The unstable versions of Pale Moon come with recognizable unstable branding (a "blood moon") to clearly differentiate it from the official releases.</p>
-
-    <p>Make sure you make regular backups of your Pale Moon profile as the unstable version may occasionally cause data loss. <strong>The unstable versions do not use a separate user profile</strong>, so if you decide to use this build, your release-version profile will be used and potentially be at risk.</p>
-
-    <h3>Release notes</h3>
-
-    <p>Concise release notes about this development version can be found here: <a href="//www.palemoon.org/unstable/releasenotes.shtml" target="_blank">http://www.palemoon.org/unstable/releasenotes.shtml</a></p>
-
-    <h3>Reporting bugs</h3>
-
-    <p>The primary place for reporting bugs is first and foremost <a href="https://forum.palemoon.org/">the forum</a>; that will allow you to get confirmation and keeps our issue trackers clean and focused.<br>
-    If you find <span style="font-style: italic;">confirmed</span> bugs in these versions, please report them in the <a href="https://repo.palemoon.org/MoonchildProductions/Pale-Moon/issues" target="_blank">issue tracker</a> on our repo server for Pale Moon. Please note that platform bugs (not specific to the front-end of the browser application) should be posted on the <a href="https://repo.palemoon.org/MoonchildProductions/UXP/issues" target="_blank">Unified XUL Platform issue tracker</a>.
-    When you do so, please <span style="font-weight: bold; color: rgb(204, 0, 0);">check if the bug has already been reported before by others</span> to prevent duplicate entries in the tracker. If you report bugs, make sure to include the build date (as found in the about box) and provide clear information about the bug:</p>
-
-    <ul>
-        <li>Clear description of the bug, with a concise and clear title for the issue<br>
-           (include exact circumstances and exact error messages, if any)<br>
-        </li>
-        <li>Steps to reproduce<br>
-           (what exactly do you do to cause the bug to become apparent?)<br>
-        </li>
-        <li>Expected results<br>
-           (given the steps taken, what did you expect the browser to do?)<br>
-        </li>
-        <li>Actual results<br>
-           (what did the browser do instead of what was expected?)<br>
-        </li>
-    </ul>
-
-    <p>Also before you report a bug, make sure that you verify if the bug also manifests in a new profile <strong>with default preferences</strong> and <strong>no installed add-ons</strong>.</p>
-
-    <h2>Updating</h2>
-
-    <p>The unstable version has its own update channel which is separate from the official releases. The preferred way of updating is to let the internal updater do its task (default setting is to update automatically). Note that in order for the internal updater to work on Linux the browser must located in a user-writable location.</p>
 
     <h2>Download</h2>
 
-    <p>The unstable version for Linux is only available in 64-bit. There are no 32-bit builds of the unstable version available.</p>
-
-    <p><a href="/datastore/release/{$PAGE_DATA.linux64_unstable.file}">Download x64 <strong>tarball</strong> (direct download)</a><br />
-    Size: {$PAGE_DATA.linux64_unstable.displaySize}<br />
-    SHA-256 checksum: {$PAGE_DATA.linux64_unstable.hash}<br />
-{if $PAGE_DATA.linux64_unstable.sig == true}
-    PGP signature: <a href="/datastore/release/{$PAGE_DATA.linux64_unstable.file}.sig">[Sig]</a>
-{/if}
-    </p>
+    <p>The unstable version for Linux has been dicontinued and is no longer available. Please download the latest release version <a href="/download/mainline/">here</a>.</p>
 {/if}

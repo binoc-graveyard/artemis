@@ -41,15 +41,10 @@
             <a href="#">Download</a>
             <ul class="ul_ch">
               <li class="li_nc">
-                <a href="#">Pale Moon for Linux ></a>
-                <ul class="ul_ch">
-                  <li class="li_nc"><a href="/download/mainline/">Mainline binaries</a></li>
-                  <li class="li_nc"><a style="color: rgb(234, 160, 153);" href="/download/unstable/"><small><small>[DEV]</small></small> Unstable versions</a></li>
-                </ul>
-              </li>
+              <li class="li_nc"><a href="/download/mainline/">Mainline Linux binaries</a></li>
               <li class="li_nc"><a href="//addons.palemoon.org/language-packs/" target="_blank">Language Packs</a></li>
               <li class="li_nc"><a href="//www.palemoon.org/archived.shtml" target="_blank">Archived versions</a></li>
-
+              <li class="li_nc"><a style="color: rgb(234, 160, 153);" href="//www.palemoon.org/sourcecode.shtml"><small><small>[DEV]</small></small> Source code</a></li>
             </ul>
           </li>
           <li class="li_nc">
