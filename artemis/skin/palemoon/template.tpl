@@ -56,7 +56,7 @@
               </li>
               <li class="li_nc"><a href="/help/installation/">Manual Installation</a>
               </li>
-              <li class="li_nc"><a href="http://developer.palemoon.org/Developer_Guide:Build_Instructions/Pale_Moon/Linux" target="_blank">Build Pale Moon yourself</a>
+              <li class="li_nc"><a href="http://developer.palemoon.org/build/linux/" target="_blank">Build Pale Moon yourself</a>
               </li>
             </ul>
           </li>
