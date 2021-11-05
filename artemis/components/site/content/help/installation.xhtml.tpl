@@ -1,6 +1,6 @@
 <h1>{$PAGE_TITLE}</h1>
 
-<p>It is <strong>not</strong> necessary to install Pale Moon to use it. It is distributed as an xz-zipped tarball which can be extracted anywhere and then launched by executing the "palemoon" file inside it. If for any reason you prefer to manually "install" Pale Moon, you can use the instructions below.</p>
+<p>It is <strong>not</strong> necessary to install Pale Moon to use it. It is distributed as an xz-compressed tarball which can be extracted anywhere and then launched by executing the "palemoon" file inside it. If for any reason you prefer to manually "install" Pale Moon, you can use the instructions below.</p>
 
 <h2>Manual method</h2>
 
